@@ -9,6 +9,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -30,29 +31,9 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
-    <!-- Add your site or application content here -->
- <nav class="navbar navbar-default" id="header">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-
   </script>
   <script>
-    if (typeof $.fn.fullpage.destroy == 'function') {
-      $.fn.fullpage.destroy('all');
-    }
-    $(document).ready(function () {
-      $('#fullpage').fullpage({
-        fixedElements: '#header',
-        autoScrolling: false,
-        verticalCentered: false,
-
-        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-        css3: false
-      });
-    });
+   
   </script>
   <!-- Add your site or application content here -->
   <nav id="header" class="navbar navbar-default">
@@ -72,32 +53,6 @@
           <img alt="Brand" src="images/LiftPort-Logo-Small.png">
         </a>
       </div>
-
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Technology<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-        <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Other Section</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galleries<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Images</a></li>
-            <li><a href="#">PDF</a></li>
-            <li><a href="#"></a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">YouTube</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">You Are Here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -155,6 +110,11 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
   <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+  <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+  <script src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+  <script src="bower_components/angular-fullpage.js/angular-fullpage.js"></script>
+  <script src="bower_components/angular-fullpage.js/angular-fullpage.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
