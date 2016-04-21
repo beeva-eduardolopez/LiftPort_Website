@@ -19,7 +19,7 @@ angular.module('liftPortWebsiteApp')
     }
     $(document).ready(function () {
       $('#fullpage').fullpage({
-        fixedElements: '#header',
+        fixedElements: '#headerrrrrrrrrrr',
         autoScrolling: false,
         verticalCentered: false,
 
