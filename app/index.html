@@ -31,6 +31,21 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
   </script>
+  <script>
+    if (typeof $.fn.fullpage.destroy == 'function') {
+      $.fn.fullpage.destroy('all');
+    }
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        fixedElements: '#header',
+        autoScrolling: false,
+        verticalCentered: false,
+
+        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+        css3: false
+      });
+    });
+  </script>
   <!-- Add your site or application content here -->
   <nav id="header" class="navbar navbar-default">
     <div class="container-fluid">
@@ -44,10 +59,10 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="#/">
-        <img alt="Brand" src="images/LiftPort-Logo-Small.png">
-      </a>
-    </div>
+        <a class="navbar-brand" href="#/">
+          <img alt="Brand" src="images/LiftPort-Logo-Small.png">
+        </a>
+      </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -73,7 +88,7 @@
     <!-- /.container-fluid -->
   </nav>
 
-    <div ng-view=""></div>
+  <div ng-view=""></div>
 
   <div class="footer">
     <div class="container">
@@ -117,7 +132,6 @@
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/about.js"></script>
   <script src="scripts/controllers/test.js"></script>
-    <script src="scripts/controllers/test2.js"></script>
   <!-- endbuild -->
 </body>
 
