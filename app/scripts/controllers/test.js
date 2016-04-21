@@ -10,6 +10,9 @@
 angular.module('liftPortWebsiteApp')
   .controller('TestCtrl', ['$scope', function ($scope) {
 
+    if (typeof $.fn.fullpage.destroy == 'function') {
+      $.fn.fullpage.destroy('all');
+    }
     $(document).ready(function () {
       $('#fullpage').fullpage({
         verticalCentered: false,
@@ -18,9 +21,4 @@ angular.module('liftPortWebsiteApp')
         css3: false
       });
     });
-    scope.$on('$routeChangeStart', function () {
-      $.fn.fullpage.destroy('all');
-    });
-
-
   }]);
