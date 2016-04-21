@@ -29,6 +29,11 @@ module.exports = function(config) {
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
+      'bower_components/fullpage.js/jquery.fullPage.js',
+      'bower_components/fullpage.js/vendors/jquery.easings.min.js',
+      'bower_components/fullpage.js/vendors/jquery.slimscroll.min.js',
+      'bower_components/angular-fullpage.js/angular-fullpage.js',
+      'bower_components/angular-fullpage.js/angular-fullpage.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
