@@ -40,6 +40,21 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 =======
   </script>
+  <script>
+    if (typeof $.fn.fullpage.destroy == 'function') {
+      $.fn.fullpage.destroy('all');
+    }
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        fixedElements: '#header',
+        autoScrolling: false,
+        verticalCentered: false,
+
+        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+        css3: false
+      });
+    });
+  </script>
   <!-- Add your site or application content here -->
   <nav id="header" class="navbar navbar-default">
     <div class="container-fluid">
@@ -54,10 +69,10 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="#/">
-        <img alt="Brand" src="images/LiftPort-Logo-Small.png">
-      </a>
-    </div>
+        <a class="navbar-brand" href="#/">
+          <img alt="Brand" src="images/LiftPort-Logo-Small.png">
+        </a>
+      </div>
 
 <<<<<<< HEAD
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -110,7 +125,7 @@
   </nav>
 >>>>>>> 0b39ced13e9bbb190708409c89f052df76f718cb
 
-    <div ng-view=""></div>
+  <div ng-view=""></div>
 
   <div class="footer">
     <div class="container">
@@ -154,7 +169,6 @@
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/about.js"></script>
   <script src="scripts/controllers/test.js"></script>
-    <script src="scripts/controllers/test2.js"></script>
   <!-- endbuild -->
 </body>
 
