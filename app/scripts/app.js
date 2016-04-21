@@ -10,14 +10,12 @@
  */
 angular
   .module('liftPortWebsiteApp', [
-    // 'fullPage.js',
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-    
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -25,14 +23,13 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+<<<<<<< HEAD
+=======
        .when('/test', {
         templateUrl: 'views/test.html',
         controller: 'TestCtrl'
       })
-       .when('/test2', {
-        templateUrl: 'views/test2.html',
-        controller: 'TestCtrl2'
-      })
+>>>>>>> 1ab8274e8c471f2edae96104e5320fc5b33ff455
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'

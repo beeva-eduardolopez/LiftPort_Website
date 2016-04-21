@@ -30,6 +30,30 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+<<<<<<< HEAD
+
+    <!-- Add your site or application content here -->
+ <nav class="navbar navbar-default" id="header">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+=======
+  </script>
+  <script>
+    if (typeof $.fn.fullpage.destroy == 'function') {
+      $.fn.fullpage.destroy('all');
+    }
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        fixedElements: '#header',
+        autoScrolling: false,
+        verticalCentered: false,
+
+        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+        css3: false
+      });
+    });
   </script>
   <!-- Add your site or application content here -->
   <nav id="header" class="navbar navbar-default">
@@ -38,17 +62,44 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
           aria-expanded="false">
+>>>>>>> 0b39ced13e9bbb190708409c89f052df76f718cb
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="#/">
-        <img alt="Brand" src="images/LiftPort-Logo-Small.png">
-      </a>
-    </div>
+        <a class="navbar-brand" href="#/">
+          <img alt="Brand" src="images/LiftPort-Logo-Small.png">
+        </a>
+      </div>
 
+<<<<<<< HEAD
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Technology<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+        <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Other Section</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galleries<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Images</a></li>
+            <li><a href="#">PDF</a></li>
+            <li><a href="#"></a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">YouTube</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">You Are Here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+=======
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
@@ -72,8 +123,9 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
+>>>>>>> 0b39ced13e9bbb190708409c89f052df76f718cb
 
-    <div ng-view=""></div>
+  <div ng-view=""></div>
 
   <div class="footer">
     <div class="container">
@@ -117,7 +169,6 @@
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/about.js"></script>
   <script src="scripts/controllers/test.js"></script>
-    <script src="scripts/controllers/test2.js"></script>
   <!-- endbuild -->
 </body>
 
