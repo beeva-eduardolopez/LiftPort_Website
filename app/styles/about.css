@@ -1,11 +1,12 @@
 #sticky {
   padding: 0.5ex;
-  width: 600px;
+  width: 400px;
   background-color: #333;
   color: #fff;
   font-size: 2em;
   border-radius: 0.5ex;
-  margin: 0 auto;
+  margin-left: 1em;
+  margin-top: 1em;
 }
 #sticky .stick {
   margin-top: 0 !important;
@@ -16,10 +17,4 @@
 }
 #sticky h3 {
   color: red;
-}
-body {
-  margin: 1em;
-}
-p {
-  margin: 1em auto;
 }
