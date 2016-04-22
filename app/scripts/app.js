@@ -24,9 +24,14 @@ angular
         controller: 'MainCtrl'
       })
 
-       .when('/test', {
+      .when('/test', {
         templateUrl: 'views/test.html',
         controller: 'TestCtrl'
+      })
+
+      .when('/images', {
+        templateUrl: 'views/images.html',
+        controller: 'ImagesCtrl'
       })
 
       .when('/about', {
@@ -37,3 +42,5 @@ angular
         redirectTo: '/'
       });
   });
+
+
