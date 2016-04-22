@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'routeStyles'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -32,7 +33,7 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
-        css: 'about.css'
+        css: 'styles/about.css'
       })
       .otherwise({
         redirectTo: '/'
