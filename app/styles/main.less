@@ -4,6 +4,11 @@
 @brandFontPrimary: #F1F1F1;
 @brandFontSecondary: #A7A9AC;
 @brandFontTertiary: #1D1D1D;
+@navbarheight: 73px;
+
+.viewport{
+    padding-top: @navbarheight
+}
 
 .buttonPrimary{}
 .buttonSecondary{}
@@ -74,18 +79,65 @@
     }
 }
 
+ 
+
 #header {
 background-color: @brandPrimary;
+height: @navbarheight;
 z-index: 20;
-li a {
-    color: @brandFontPrimary;
-    font-size: 1.4em;
+border-bottom: 4px solid @brandSecondary;
+position: fixed;
+width: 100%;
+// margin-top: -20px;
+li {
+    line-height: @navbarheight;
+    position: bottom;
+    margin-top: 30px;
+    a .active {
+        background-color: @brandSecondary;
+        color: @brandFontPrimary;
+    }
+    a{
+        color: @brandFontPrimary;
+        font-size: 1.4em;
+        background-color: transparent;
+    }
+    a:hover {
+        color: @brandSecondary;
+        background-color: transparent;
+    }
 }
-li a:hover {
-    color: @brandSecondary;
+#lplogo {
+    height: 100px; 
+    width: auto;
+    position: fixed;
+    z-index: 25;
+    margin-top: -10px;
 }
-li a:active {
-    background-color: brandSecondary;
-    color: brandFontPrimary;
+#lpname {
+    @media (min-width: 900px){
+        height: 35px; 
+        width: auto;
+        padding-left: 100px; 
+        margin-top: 4%;
+    }
+     @media (max-width: 900px){
+        height: 0px;
+        width:0px;
+        opacity: 0;
+    }
 }
+.navbar-toggle{
+    margin-right: 25px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: transparent;
+    .icon-bar {
+    background-color: #FFF;
+    height: 2px;
+    width: 30px;
+    margin-top: 7px;
+    }
+}
+
 }

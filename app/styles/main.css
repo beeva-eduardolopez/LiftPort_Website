@@ -1,3 +1,6 @@
+.viewport {
+  padding-top: 73px;
+}
 @font-face {
   font-family: 'Roboto Condensed';
   src: url(../../fonts/Roboto/RobotoCondensed-Regular.ttf);
@@ -37,16 +40,61 @@
 }
 #header {
   background-color: #101C3C;
+  height: 73px;
   z-index: 20;
+  border-bottom: 4px solid #CF2E20;
+  position: fixed;
+  width: 100%;
+}
+#header li {
+  line-height: 73px;
+  position: bottom;
+  margin-top: 30px;
+}
+#header li a .active {
+  background-color: #CF2E20;
+  color: #F1F1F1;
 }
 #header li a {
   color: #F1F1F1;
   font-size: 1.4em;
+  background-color: transparent;
 }
 #header li a:hover {
   color: #CF2E20;
+  background-color: transparent;
 }
-#header li a:active {
-  background-color: brandSecondary;
-  color: brandFontPrimary;
+#header #lplogo {
+  height: 100px;
+  width: auto;
+  position: fixed;
+  z-index: 25;
+  margin-top: -10px;
+}
+@media (min-width: 900px) {
+  #header #lpname {
+    height: 35px;
+    width: auto;
+    padding-left: 100px;
+    margin-top: 4%;
+  }
+}
+@media (max-width: 900px) {
+  #header #lpname {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+}
+#header .navbar-toggle {
+  margin-right: 25px;
+  margin-top: 15px;
+  background-color: transparent;
+  border: transparent;
+}
+#header .navbar-toggle .icon-bar {
+  background-color: #FFF;
+  height: 2px;
+  width: 30px;
+  margin-top: 7px;
 }
