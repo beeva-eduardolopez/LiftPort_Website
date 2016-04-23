@@ -50,6 +50,7 @@
   line-height: 73px;
   position: bottom;
   margin-top: 30px;
+  font-family: 'Roboto Condensed Light';
 }
 #header li a .active {
   background-color: #CF2E20;
@@ -63,6 +64,22 @@
 #header li a:hover {
   color: #CF2E20;
   background-color: transparent;
+}
+#header li .dropdown-menu {
+  z-index: 25;
+  margin-top: -9px;
+  border: none;
+  box-shadow: none;
+  height: auto;
+  background-color: #CF2E20;
+  color: #F1F1F1;
+}
+#header li .dropdown-menu li {
+  display: inline;
+  text-align: center;
+}
+#header li .dropdown-menu li a:hover {
+  color: #101C3C;
 }
 #header #lplogo {
   height: 100px;
@@ -121,7 +138,7 @@ h1 {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background: url('img/a17.png') no-repeat;
+  background: url('../images/lunar_elevator/a17.png') no-repeat;
   overflow: hidden;
 }
 .jssora05l {
@@ -179,7 +196,7 @@ h1 {
   height: 68px;
   border: #000 2px solid;
   box-sizing: content-box;
-  background: url('img/t01.png') -800px -800px no-repeat;
+  background: url('../images/lunar_elevator/t01.png') -800px -800px no-repeat;
   _background: none;
 }
 .jssort01 .pav .c {
