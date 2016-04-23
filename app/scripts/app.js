@@ -30,9 +30,10 @@ angular
         controller: 'TestCtrl'
       })
 
-      .when('/images', {
-        templateUrl: 'views/images.html',
-        controller: 'ImagesCtrl'
+      .when('/lunarelevator', {
+        templateUrl: 'views/lunarelevator.html',
+        controller: 'LunarElevatorCtrl',
+        css: 'styles/lunarelevator.css'
       })
 
       .when('/about', {
