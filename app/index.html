@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="liftPortWebsiteApp" ng-controller="MainCtrl" >
+<html ng-app="liftPortWebsiteApp" ng-controller="MainCtrl">
 
 <head>
   <meta charset="utf-8">
@@ -14,9 +14,11 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
+  <script type="text/javascript" src="../bower_components/jssor.slider.mini.js"></script>
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="../bower_components/fullpage.js/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/lunarelevator.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="../bower_components/fullpage.js/jquery.fullPage.js"></script>
@@ -28,11 +30,8 @@
 
 <body>
   <!--<script type="text/javascript" src="../bower_components/fullpage.js/jquery.fullPage.js"></script>-->
-<!--
+  <!--
   </script>
-  <script>
-   
-  </script>-->
   <!--NAVBAR START-->
   <nav id="header" class="navbar navbar-default liftPortNav">
     <div class="container-fluid">
@@ -45,22 +44,29 @@
             <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand"  href="#/">
-            <img alt="Brand" id="lplogo"src="images/LiftPort-Logo-Navy-Back.png">
+        <a class="navbar-brand" href="#/">
+          <img alt="Brand" id="lplogo" src="images/LiftPort-Logo-Navy-Back.png">
         </a>
         <a class="navbar-brand" href="#/">
-            <img alt="liftport" id="lpname" src="images/4_LiftPort_Logo_(website).png">
+          <img alt="liftport" id="lpname" src="images/4_LiftPort_Logo_(website).png">
         </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">About<span class="sr-only">(current)</span></a></li>
+          <li><a href="#images">Other Section</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elevators<span class="caret"></span></a>
             <ul class="dropdown-menu">
-                    <li class="col-6"><a href="#test2">Lunar Elevator</a></li> 
-                    <li class="col-6"><a href="#test">Space Elevator</a></li>           
+              <li><a href="#test">Space Elevator</a></li>
+              <li><a href="#lunarelevator">Lunar Elevator</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
             </ul>
           </li>
           <li><a href="#about" data-toggle="pill">About<span class="sr-only">(current)</span></a></li>
@@ -109,6 +115,12 @@
   <script src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
   <script src="bower_components/angular-fullpage.js/angular-fullpage.js"></script>
   <script src="bower_components/angular-fullpage.js/angular-fullpage.min.js"></script>
+  <script src="bower_components/get-size/get-size.js"></script>
+  <script src="bower_components/ev-emitter/ev-emitter.js"></script>
+  <script src="bower_components/desandro-matches-selector/matches-selector.js"></script>
+  <script src="bower_components/fizzy-ui-utils/utils.js"></script>
+  <script src="bower_components/outlayer/outlayer.js"></script>
+  <script src="bower_components/packery/js/packery.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -117,6 +129,8 @@
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/about.js"></script>
   <script src="scripts/controllers/test.js"></script>
+  <!--<script src="scripts/controllers/images.js"></script>-->
+  <script src="scripts/controllers/lunarelevator.js"></script>
   <script src="bower_components/angular-route-styles/route-styles.js"></script>
   <!-- endbuild -->
 </body>
