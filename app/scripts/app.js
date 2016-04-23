@@ -25,9 +25,15 @@ angular
         controller: 'MainCtrl'
       })
 
-       .when('/test', {
+      .when('/test', {
         templateUrl: 'views/test.html',
         controller: 'TestCtrl'
+      })
+
+      .when('/lunarelevator', {
+        templateUrl: 'views/lunarelevator.html',
+        controller: 'LunarElevatorCtrl',
+        css: 'styles/lunarelevator.css'
       })
 
       .when('/about', {
@@ -39,3 +45,5 @@ angular
         redirectTo: '/'
       });
   });
+
+
