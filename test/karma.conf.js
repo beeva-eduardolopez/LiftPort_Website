@@ -39,7 +39,6 @@ module.exports = function(config) {
       'bower_components/desandro-matches-selector/matches-selector.js',
       'bower_components/fizzy-ui-utils/utils.js',
       'bower_components/outlayer/outlayer.js',
-      'bower_components/masonry/masonry.js',
       'bower_components/packery/js/packery.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower

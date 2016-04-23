@@ -11,10 +11,6 @@
     "angular-sanitize": "^1.3.0",
     "angular-touch": "^1.3.0",
     "angular-fullpage.js": "^0.2.1",
-<<<<<<< HEAD
-=======
-    "masonry": "^4.0.0",
->>>>>>> b86527196862f02aecb7dfd2702a445c9d725c7f
     "packery": "^2.0.0"
   },
   "devDependencies": {
