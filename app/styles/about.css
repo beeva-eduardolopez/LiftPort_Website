@@ -25,13 +25,10 @@
 /* force scrollbar */
 html { overflow-y: scroll; }
 
-body { font-family: sans-serif; }
-
 /* ---- grid ---- */
 
 .grid {
   background: #DDD;
-  width: 100%;
 }
 
 /* clear fix */
