@@ -9,9 +9,11 @@
  */
 angular.module('liftPortWebsiteApp')
   .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    var $grid = $('.grid').packery({
+      // options...
+    });
+    // layout Packery after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.packery();
+    });
+});
