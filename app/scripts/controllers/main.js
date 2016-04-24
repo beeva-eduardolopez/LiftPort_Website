@@ -9,7 +9,6 @@
  */
 angular.module('liftPortWebsiteApp')
   .controller('MainCtrl', function ($scope) {
-<<<<<<< HEAD
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -30,7 +29,6 @@ angular.module('liftPortWebsiteApp')
 				}
      });
    });
-=======
     // $scope.awesomeThings = [
     //   'HTML5 Boilerplate',
     //   'AngularJS',
@@ -50,5 +48,4 @@ angular.module('liftPortWebsiteApp')
     //     css3: false
     //   });
     // });
->>>>>>> aaffdbed2de022a231b102aeebc90526c915625f
   });
