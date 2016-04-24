@@ -7,12 +7,21 @@
 @navbarheight: 73px;
 @containerpad:7%;
 
-@paragraphFont: {
+.paragraphStyle {
     p {
-        font-family: 'Oswald Light';
-        color: @brandFontSecondary
+        font-family: 'Roboto Condensed';
+        color: @brandFontSecondary;
+        font-size: 1em;
     }
 };
+
+.headerStyle {
+    h1 {
+        text-transform: uppercase;
+        font-family: 'Oswald Bold';
+        font-size: 5em;
+    }
+}
 
 .viewport{
     padding-top: @navbarheight
@@ -165,3 +174,6 @@ width: 100%;
         }
     }
 }
+
+@import "lunarelevator.less";
+@import "about.less";

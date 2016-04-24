@@ -1,3 +1,13 @@
+.paragraphStyle p {
+  font-family: 'Roboto Condensed';
+  color: #A7A9AC;
+  font-size: 1em;
+}
+.headerStyle h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald Bold';
+  font-size: 5em;
+}
 .viewport {
   padding-top: 73px;
 }
