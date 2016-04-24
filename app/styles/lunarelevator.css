@@ -1,3 +1,13 @@
+.paragraphStyle p {
+  font-family: 'Roboto Condensed';
+  color: #A7A9AC;
+  font-size: 1em;
+}
+.headerStyle h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald Bold';
+  font-size: 5em;
+}
 .viewport {
   padding-top: 73px;
 }
@@ -114,6 +124,55 @@
   height: 2px;
   width: 30px;
   margin-top: 7px;
+}
+#sticky {
+  padding: 0.5ex;
+  width: 400px;
+  background-color: #333;
+  color: #fff;
+  font-size: 2em;
+  border-radius: 0.5ex;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+#sticky .stick {
+  margin-top: 0 !important;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  border-radius: 0 0 0.5em 0.5em;
+}
+#sticky h3 {
+  color: red;
+}
+* {
+  box-sizing: border-box;
+}
+/* force scrollbar */
+html {
+  overflow-y: scroll;
+}
+/* ---- grid ---- */
+.grid {
+  background: #DDD;
+}
+.grid :after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- .grid-item ---- */
+.grid-item {
+  width: 33.333%;
+  float: left;
+}
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+.grid-item :hover {
+  opacity: .5;
+  cursor: pointer;
 }
 #section0 {
   background-image: url(../images/Drifter_wallpaper_A_1366x768.jpg);
@@ -244,6 +303,24 @@ h1 {
 }
 .lunar-txt p {
   margin: 1%;
+  font-family: 'Roboto Condensed';
+  color: #1D1D1D;
+}
+.videos {
+  text-align: center;
+  margin: 2em;
+}
+.videos .h1 {
+  text-align: center;
+  font-family: 'Roboto Condensed';
+  color: #1D1D1D;
+}
+.documents {
+  text-align: center;
+  margin: 2em;
+}
+.documents .h1 {
+  text-align: center;
   font-family: 'Roboto Condensed';
   color: #1D1D1D;
 }
