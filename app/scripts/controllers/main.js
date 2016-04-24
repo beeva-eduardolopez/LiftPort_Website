@@ -49,5 +49,5 @@ angular.module('liftPortWebsiteApp')
     //     css3: false
     //   });
     // });
->>>>>>> aaffdbed2de022a231b102aeebc90526c915625f
+
   });
