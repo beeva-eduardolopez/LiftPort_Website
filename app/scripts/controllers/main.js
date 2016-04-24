@@ -9,7 +9,6 @@
  */
 angular.module('liftPortWebsiteApp')
   .controller('MainCtrl', function ($scope) {
-<<<<<<< HEAD
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -30,7 +29,7 @@ angular.module('liftPortWebsiteApp')
 				}
      });
    });
-=======
+
     // $scope.awesomeThings = [
     //   'HTML5 Boilerplate',
     //   'AngularJS',
