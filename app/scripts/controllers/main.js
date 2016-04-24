@@ -9,6 +9,7 @@
  */
 angular.module('liftPortWebsiteApp')
   .controller('MainCtrl', function ($scope) {
+<<<<<<< HEAD
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -29,4 +30,25 @@ angular.module('liftPortWebsiteApp')
 				}
      });
    });
+=======
+    // $scope.awesomeThings = [
+    //   'HTML5 Boilerplate',
+    //   'AngularJS',
+    //   'Karma'
+    // ];
+    // if (typeof $.fn.fullpage.destroy == 'function') {
+    //   $.fn.fullpage.destroy('all');
+    // }
+    // $(document).ready(function () {
+    //   if (typeof $.fn.fullpage.destroy == 'function') {
+    //     $.fn.fullpage.destroy('all');
+    //   }
+    //   $('#fullpage').fullpage({
+    //     fixedElements: '#header',
+    //     autoScrolling: false,
+    //     verticalCentered: false,
+    //     css3: false
+    //   });
+    // });
+>>>>>>> aaffdbed2de022a231b102aeebc90526c915625f
   });
