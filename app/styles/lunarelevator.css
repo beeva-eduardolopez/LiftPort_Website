@@ -125,7 +125,7 @@
   width: 30px;
   margin-top: 7px;
 }
-<<<<<<< HEAD
+
 .landingPage {
   max-height: 800px;
   background: url('images/main_view/STAR SKY HD background loop.mp4');
@@ -153,8 +153,7 @@
   z-index: 3;
   overflow: auto;
 }
-=======
->>>>>>> aaffdbed2de022a231b102aeebc90526c915625f
+
 #sticky {
   padding: 0.5ex;
   width: 400px;
