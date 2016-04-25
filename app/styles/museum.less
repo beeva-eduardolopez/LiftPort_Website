@@ -1,0 +1,107 @@
+@import "main.less";
+
+.museum-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+//   background-color: red;
+  
+    :after {
+    /* clearfix */
+    content: '';
+    display: table;
+    clear: both;
+    }
+}
+
+#museum-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  
+    :before {
+        /* this is the vertical line */
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 18px;
+        height: 100%;
+        width: 4px;
+        background: #d7e4ed;
+    }
+}
+
+.museum-timeline-block {
+  position: relative;
+  margin: 2em 0;
+  
+    :after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    :first-child {
+        margin-top: 0;
+    }
+    :last-child {
+    margin-bottom: 0;
+    }
+}
+
+.museum-timeline-content {
+  position: relative;
+  margin-left: 60px;
+  background: white;
+  border-radius: 0.25em;
+  padding: 1em;
+  box-shadow: 0 3px 0 #d7e4ed;
+      
+    :after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    h2 {
+        color: #303e49;
+    }
+    // p, .museum-timeline-content, .museum-read-more, .museum-timeline-content .museum-date {
+        
+    // }
+    // .museum-timeline-content, .museum-read-more, .museum-timeline-content .museum-date {
+    //     display: inline-block;
+    // }
+    p {
+        display: inline-block;
+        margin: 1em 0;
+        line-height: 1.6;
+        font-size: 13px;
+        font-size: 0.8125rem;
+    }
+    // .museum-timeline-content .museum-read-more {
+    //     float: right;
+    //     padding: .8em 1em;
+    //     background: #acb7c0;
+    //     color: white;
+    //     border-radius: 0.25em;
+    // }
+    // .no-touch .museum-timeline-content .museum-read-more:hover {
+    //     background-color: #bac4cb;
+    // }
+    // .museum-timeline-content .museum-date {
+    //     float: left;
+    //     padding: .8em 0;
+    //     opacity: .7;
+    // }
+    :before {
+        content: '';
+        position: absolute;
+        top: 16px;
+        right: 100%;
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-right: 7px solid white;
+    }
+}
