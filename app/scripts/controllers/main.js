@@ -19,7 +19,7 @@ angular.module('liftPortWebsiteApp')
        $.fn.fullpage.destroy('all');
      }
      $('#fullpage').fullpage({
-       fixedElements: '#header',
+    //    fixedElements: '#header',
        autoScrolling: false,
        verticalCentered: false,
        css3: false,
@@ -28,6 +28,7 @@ angular.module('liftPortWebsiteApp')
 					$('video').get(0).play();
 				}
      });
+    $('.navbar-fixed-top').autoHidingNavbar().autoHidingNavbar('setHeightOffset',100);
    });
     // $scope.awesomeThings = [
     //   'HTML5 Boilerplate',
