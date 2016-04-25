@@ -99,9 +99,7 @@ angular.module('liftPortWebsiteApp')
             var myPDF = PDFObject.embed("../pdfs/ladder.pdf", "#pdf", options);
 
             var el = document.querySelector("#results");
-            el.setAttribute("class", (myPDF) ? "success" : "fail");
-            // el.innerHTML = (myPDF) ? "PDFObject successfully added an &lt;embed> element to the page!" : "Uh-oh, the embed didn't work.";
-
+            el.setAttribute("class", (myPDF) ? "success" : "fail");           
         });
 
     });
