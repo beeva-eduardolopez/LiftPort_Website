@@ -96,7 +96,7 @@ angular.module('liftPortWebsiteApp')
                 }
             };
 
-            var myPDF = PDFObject.embed("../pdfs/example.pdf", "#pdf", options);
+            var myPDF = PDFObject.embed("../pdfs/ladder.pdf", "#pdf", options);
 
             var el = document.querySelector("#results");
             el.setAttribute("class", (myPDF) ? "success" : "fail");
