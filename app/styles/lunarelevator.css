@@ -1,16 +1,3 @@
-.paragraphStyle p {
-  font-family: 'Roboto Condensed';
-  color: #A7A9AC;
-  font-size: 1em;
-}
-.headerStyle h1 {
-  text-transform: uppercase;
-  font-family: 'Oswald Bold';
-  font-size: 5em;
-}
-.viewport {
-  padding-top: 73px;
-}
 @font-face {
   font-family: 'Roboto Condensed';
   src: url(../../fonts/Roboto/RobotoCondensed-Regular.ttf);
@@ -35,9 +22,18 @@
   font-family: 'Oswald Bold';
   src: url(../../fonts/Oswald/Oswald-Bold.ttf);
 }
-@font-face {
-  font-family: 'WorkSans';
-  src: url(../../fonts/WorkSans/WorkSans-Regular.ttf);
+.paragraphStyle p {
+  font-family: 'Roboto Condensed';
+  color: #A7A9AC;
+  font-size: 1em;
+}
+.headerStyle h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald Bold';
+  font-size: 5em;
+}
+.viewport {
+  padding-top: 73px;
 }
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -125,91 +121,69 @@
   width: 30px;
   margin-top: 7px;
 }
-
 .landingPage {
   max-height: 800px;
-  background: url('images/main_view/STAR SKY HD background loop.mp4');
+  width: 100%;
+  height: 800px;
+}
+#sectionLanding {
+  overflow: hidden;
+}
+#sectionLanding .layer0 {
+  width: auto;
+  height: 900px;
+}
+#sectionLanding .layer0 #moon {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  max-width: 2560px;
+  max-height: 700px;
 }
 #sectionLanding .layer1 {
   position: absolute;
-  z-index: 4;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: transparent;
 }
 #sectionLanding #bgvid {
   position: absolute;
-  bottom: 0;
   top: 0;
   right: 0;
-  width: 1200px;
-  height: 900px;
-  max-height: 900px;
+  width: 100%;
+  max-width: 2560px;
+  height: 650px;
   background-size: 100% 100%;
   background-color: black;
   /* in case the video doesn't fit the whole page*/
-  background-image: url('images/main_view/STAR SKY HD background loop.mp4');
   background-position: center center;
   background-size: contain;
   object-fit: cover;
   /*cover video background */
-  z-index: 3;
-  overflow: auto;
+  z-index: -10;
+  overflow: hidden;
 }
-
-#sticky {
-  padding: 0.5ex;
-  width: 400px;
-  background-color: #333;
-  color: #fff;
-  font-size: 2em;
-  border-radius: 0.5ex;
-  margin-left: 1em;
-  margin-top: 1em;
+#sectionLanding .title {
+  padding-top: 20px;
 }
-#sticky .stick {
-  margin-top: 0 !important;
-  position: fixed;
-  top: 0;
-  z-index: 10000;
-  border-radius: 0 0 0.5em 0.5em;
-}
-#sticky h3 {
-  color: red;
-}
-* {
-  box-sizing: border-box;
-}
-/* force scrollbar */
-html {
-  overflow-y: scroll;
-}
-/* ---- grid ---- */
-.grid {
-  background: #DDD;
-}
-.grid :after {
-  content: '';
-  display: block;
-  clear: both;
-}
-/* ---- .grid-item ---- */
-.grid-item {
-  width: 33.333%;
-  float: left;
-}
-.grid-item img {
-  display: block;
-  max-width: 100%;
-}
-.grid-item :hover {
-  opacity: .5;
-  cursor: pointer;
-}
-#section0 {
-  background-image: url(../images/Drifter_wallpaper_A_1366x768.jpg);
-  padding: 30% 0 0 0;
-}
-.section {
-  background-size: cover;
+#sectionLanding .landingTextArea {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2%;
+  margin-top: 3%;
   text-align: center;
+  max-height: 60%;
+  margin-bottom: 5%;
+}
+#sectionLanding .landingTextArea background {
+  filter: blur(0.2);
+}
+#sectionLanding .landingTextArea .landingText {
+  color: #F1F1F1;
+  font-size: 2.5em;
+  border-bottom: 1px solid white;
 }
 h1 {
   font-size: 5em;
