@@ -36,7 +36,7 @@
 .viewport {
   padding-top: 73px;
 }
-.footer-distributed {
+.footer {
   border-top: 4px solid #CF2E20;
   background-color: #101C3C;
   box-shadow: 0 1px 1px 0 #1D1D1D;
@@ -50,51 +50,51 @@
 #lpnamefooter {
   width: 50% !important;
 }
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
   display: inline-block;
   vertical-align: top;
 }
 /* Footer left */
-.footer-distributed .footer-left {
+.footer .footer-left {
   width: 40%;
 }
 /* The company logo */
-.footer-distributed h3 {
+.footer h3 {
   color: #F1F1F1;
   font: normal 36px 'Roboto Condensed Light', cursive;
   margin: 0;
 }
-.footer-distributed h3 span {
+.footer h3 span {
   color: #CF2E20;
 }
 /* Footer links */
-.footer-distributed .footer-links {
+.footer .footer-links {
   color: #F1F1F1;
   margin: 20px 0 12px;
   padding: 0;
 }
-.footer-distributed .footer-links a:hover {
+.footer .footer-links a:hover {
   color: #CF2E20;
 }
-.footer-distributed .footer-links a {
+.footer .footer-links a {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
 }
-.footer-distributed .footer-company-name {
+.footer .footer-company-name {
   color: #A7A9AC;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
 }
 /* Footer Center */
-.footer-distributed .footer-center {
+.footer .footer-center {
   width: 35%;
 }
-.footer-distributed .footer-center i {
+.footer .footer-center i {
   background-color: #101C3C;
   color: #F1F1F1;
   font-size: 25px;
@@ -106,45 +106,45 @@
   margin: 10px 15px;
   vertical-align: middle;
 }
-.footer-distributed .footer-center i.fa-envelope {
+.footer .footer-center i.fa-envelope {
   font-size: 17px;
   line-height: 38px;
 }
-.footer-distributed .footer-center p {
+.footer .footer-center p {
   display: inline-block;
   color: #F1F1F1;
   vertical-align: middle;
   margin: 0;
 }
-.footer-distributed .footer-center p span {
+.footer .footer-center p span {
   display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
 }
-.footer-distributed .footer-center p a {
+.footer .footer-center p a {
   color: #CF2E20;
   text-decoration: none;
 }
 /* Footer Right */
-.footer-distributed .footer-right {
+.footer .footer-right {
   width: 20%;
 }
-.footer-distributed .footer-company-about {
+.footer .footer-company-about {
   line-height: 20px;
   color: #A7A9AC;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
 }
-.footer-distributed .footer-company-about span {
+.footer .footer-company-about span {
   display: block;
   color: #F1F1F1;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.footer-distributed .footer-icons {
+.footer .footer-icons {
   margin-top: 25px;
 }
 .fa-facebook {
@@ -156,7 +156,7 @@
 .fa-instagram {
   width: 100%;
 }
-.footer-distributed .footer-icons a {
+.footer .footer-icons a {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -171,18 +171,18 @@
 }
 /* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 880px) {
-  .footer-distributed {
+  .footer {
     font: bold 14px 'Roboto Condensed Light';
   }
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
     display: block;
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
   }
-  .footer-distributed .footer-center i {
+  .footer .footer-center i {
     margin-left: 0;
   }
 }
