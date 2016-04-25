@@ -22,7 +22,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="../bower_components/fullpage.js/jquery.fullPage.js"></script>
-
+  <script src="../bower_components/pdfobject.min.js"></script>
   <!-- endbuild -->
   <!--<script type="text/javascript" src="../bower_components/angular-fullpage.js/angular-fullpage.min.js"></script>-->
 </head>
@@ -58,13 +58,13 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elevators<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Space Elevator</a></li>
+              <li><a href="#spaceelevator">Space Elevator</a></li>
               <li><a href="#lunarelevator">Lunar Elevator</a></li>
             </ul>
           </li>
           <li><a href="#about" data-toggle="pill">About<span class="sr-only">(current)</span></a></li>
-          <li><a href="/" data-toggle="pill">Museum</a></li>
-          <li><a href="/" data-toggle="pill">Technical Docs</a></li>
+          <li><a href="#museum" data-toggle="pill">Museum</a></li>
+          <li><a href="#techdocs" data-toggle="pill">Technical Docs</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -108,7 +108,6 @@
   <script src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
   <script src="bower_components/angular-fullpage.js/angular-fullpage.js"></script>
   <script src="bower_components/angular-fullpage.js/angular-fullpage.min.js"></script>
-  <script src="../bower_components/pdfobject.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -116,9 +115,10 @@
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/about.js"></script>
-  <script src="scripts/controllers/test.js"></script>
-  <!--<script src="scripts/controllers/images.js"></script>-->
+  <script src="scripts/controllers/museum.js"></script>
+  <script src="scripts/controllers/techdocs.js"></script>
   <script src="scripts/controllers/lunarelevator.js"></script>
+  <script src="scripts/controllers/spaceelevator.js"></script>
   <script src="bower_components/angular-route-styles/route-styles.js"></script>
   <!-- endbuild -->
 </body>

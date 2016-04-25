@@ -25,15 +25,26 @@ angular
         controller: 'MainCtrl'
       })
 
-      .when('/test', {
-        templateUrl: 'views/test.html',
-        controller: 'TestCtrl'
+      .when('/museum', {
+        templateUrl: 'views/museum.html',
+        controller: 'MuseumCtrl'
+      })
+
+      .when('/techdocs', {
+        templateUrl: 'views/techdocs.html',
+        controller: 'TechDocsCtrl'
       })
 
       .when('/lunarelevator', {
         templateUrl: 'views/lunarelevator.html',
         controller: 'LunarElevatorCtrl',
         css: 'styles/lunarelevator.css'
+      })
+
+      .when('/spaceelevator', {
+        templateUrl: 'views/spaceelevator.html',
+        controller: 'SpaceElevatorCtrl',
+        css: 'styles/spaceelevator.css'
       })
 
       .when('/about', {
