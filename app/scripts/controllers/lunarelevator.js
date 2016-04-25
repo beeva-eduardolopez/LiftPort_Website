@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('liftPortWebsiteApp')
     .controller('LunarElevatorCtrl', function ($scope) {
         $(document).ready(function () {
