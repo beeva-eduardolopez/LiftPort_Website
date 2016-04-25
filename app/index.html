@@ -22,7 +22,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="../bower_components/fullpage.js/jquery.fullPage.js"></script>
-
+  <script src="../bower_components/pdfobject.min.js"></script>
   <!-- endbuild -->
   <!--<script type="text/javascript" src="../bower_components/angular-fullpage.js/angular-fullpage.min.js"></script>-->
 </head>
@@ -58,13 +58,13 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elevators<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Space Elevator</a></li>
+              <li><a href="#spaceelevator">Space Elevator</a></li>
               <li><a href="#lunarelevator">Lunar Elevator</a></li>
             </ul>
           </li>
           <li><a href="#about" data-toggle="pill">About<span class="sr-only">(current)</span></a></li>
-          <li><a href="/" data-toggle="pill">Museum</a></li>
-          <li><a href="/" data-toggle="pill">Technical Docs</a></li>
+          <li><a href="#museum" data-toggle="pill">Museum</a></li>
+          <li><a href="#techdocs" data-toggle="pill">Technical Docs</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -75,10 +75,61 @@
 
   <div class="viewport" ng-view=""></div>
 
-  <div class="footer">
-    <div class="container">
+  <footer class="footer">
+
+    <div class="footer-left">
+      <img alt="liftport" id="lpnamefooter" src="images/4_LiftPort_Logo_(website).png">
+
+      <p class="footer-links">
+        <a href="#">Home</a> ·
+        <a href="#lunarelevator">Lunar Elevator</a> ·
+        <a href="#spaceelevator">Space Elevator</a> ·
+        <a href="#museum">Museum</a> ·
+        <a href="#about">About</a> ·
+        <a href="#techdocs">Tech Docs</a>
+      </p>
+
+      <p class="footer-company-name">LifPort Group &copy; 2012</p>
     </div>
-  </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Addres Lift Port Group</span> Seattle, Washington</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+1 XXX XXX XXXX</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:liftport@company.com">lifport@company.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About LiftPort Group</span> "There is a profound difference between difficult, very very hard, and impossible."
+        - Michael Laine.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com/groups/liftport/?fref=ts"><img class="fa fa-facebook" src="images/header-fb-icon.png"></img></a>
+        <a href="https://twitter.com/liftport?lang=es"><img class="fa fa-twitter" src="images/header-twitter-icon.png"></img></a>
+        <a href="https://www.instagram.com/liftport/"><img class="fa fa-instagram" src="images/header-insta-icon.png"></img></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
 
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -115,9 +166,10 @@
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/about.js"></script>
-  <script src="scripts/controllers/test.js"></script>
-  <!--<script src="scripts/controllers/images.js"></script>-->
+  <script src="scripts/controllers/museum.js"></script>
+  <script src="scripts/controllers/techdocs.js"></script>
   <script src="scripts/controllers/lunarelevator.js"></script>
+  <script src="scripts/controllers/spaceelevator.js"></script>
   <script src="bower_components/angular-route-styles/route-styles.js"></script>
   <!-- endbuild -->
 </body>
