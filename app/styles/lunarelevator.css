@@ -32,6 +32,7 @@
   font-family: 'Oswald Bold';
   font-size: 5em;
   color: #101C3C;
+
 }
 .viewport {
   padding-top: 73px;
@@ -299,6 +300,9 @@
   width: 100%;
   text-align: center;
   background: transparent;
+  z-index: 4;
+  width: 100%;
+
 }
 #sectionLanding #bgvid {
   position: absolute;
@@ -314,6 +318,7 @@
   background-size: contain;
   object-fit: cover;
   /*cover video background */
+
   z-index: -10;
   overflow: hidden;
 }
@@ -335,6 +340,10 @@
   color: #F1F1F1;
   font-size: 2.5em;
   border-bottom: 1px solid white;
+
+  z-index: 3;
+  overflow: auto;
+
 }
 .jssora05l,
 .jssora05r {
