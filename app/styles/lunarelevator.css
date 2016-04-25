@@ -31,10 +31,9 @@
   text-transform: uppercase;
   font-family: 'Oswald Bold';
   font-size: 5em;
-<<<<<<< HEAD
-=======
+
   color: #101C3C;
->>>>>>> 135d3c2aed1c7784d384e40f16d19783fff5e80c
+
 }
 .viewport {
   padding-top: 73px;
@@ -150,16 +149,16 @@
 }
 #sectionLanding .layer1 {
   position: absolute;
-<<<<<<< HEAD
+
   z-index: 9999;
   top: 0;
   width: 100%;
   text-align: center;
   background: transparent;
-=======
+
   z-index: 4;
   width: 100%;
->>>>>>> 135d3c2aed1c7784d384e40f16d19783fff5e80c
+
 }
 #sectionLanding #bgvid {
   position: absolute;
@@ -175,7 +174,7 @@
   background-size: contain;
   object-fit: cover;
   /*cover video background */
-<<<<<<< HEAD
+
   z-index: -10;
   overflow: hidden;
 }
@@ -197,7 +196,7 @@
   color: #F1F1F1;
   font-size: 2.5em;
   border-bottom: 1px solid white;
-=======
+
   z-index: 3;
   overflow: auto;
 }
@@ -311,7 +310,6 @@
 .videos {
   text-align: center;
   margin: 2em;
->>>>>>> 135d3c2aed1c7784d384e40f16d19783fff5e80c
 }
 .documents {
   text-align: center;
