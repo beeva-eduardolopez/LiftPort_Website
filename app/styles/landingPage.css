@@ -1,0 +1,715 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url(../../fonts/Roboto/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url(../../fonts/Roboto/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: 'Roboto Condensed Light';
+  src: url(../../fonts/Roboto/RobotoCondensed-Light.ttf);
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url(../../fonts/Oswald/Oswald-Regular.ttf);
+}
+@font-face {
+  font-family: 'Oswald Light';
+  src: url(../../fonts/Oswald/Oswald-Light.ttf);
+}
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url(../../fonts/Oswald/Oswald-Bold.ttf);
+}
+.paragraphStyle p {
+  font-family: 'Roboto Condensed';
+  color: #A7A9AC;
+  font-size: 1em;
+}
+.headerStyle h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald Bold';
+  font-size: 5em;
+  color: #101C3C;
+}
+.viewport {
+  padding-top: 73px;
+}
+.spacerBox {
+  width: 100%;
+  max-height: 80px;
+}
+.footer {
+  border-top: 4px solid #CF2E20;
+  background-color: #101C3C;
+  box-shadow: 0 1px 1px 0 #1D1D1D;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px 'Roboto Condensed Light';
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+#lpnamefooter {
+  width: 50% !important;
+}
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+/* Footer left */
+.footer .footer-left {
+  width: 40%;
+}
+/* The company logo */
+.footer h3 {
+  color: #F1F1F1;
+  font: normal 36px 'Roboto Condensed Light', cursive;
+  margin: 0;
+}
+.footer h3 span {
+  color: #CF2E20;
+}
+/* Footer links */
+.footer .footer-links {
+  color: #F1F1F1;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+.footer .footer-links a:hover {
+  color: #CF2E20;
+}
+.footer .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+.footer .footer-company-name {
+  color: #A7A9AC;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+/* Footer Center */
+.footer .footer-center {
+  width: 35%;
+}
+.footer .footer-center i {
+  background-color: #101C3C;
+  color: #F1F1F1;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+.footer .footer-center p {
+  display: inline-block;
+  color: #F1F1F1;
+  vertical-align: middle;
+  margin: 0;
+}
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+.footer .footer-center p a {
+  color: #CF2E20;
+  text-decoration: none;
+}
+/* Footer Right */
+.footer .footer-right {
+  width: 20%;
+}
+.footer .footer-company-about {
+  line-height: 20px;
+  color: #A7A9AC;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+.footer .footer-company-about span {
+  display: block;
+  color: #F1F1F1;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer .footer-icons {
+  margin-top: 25px;
+}
+.fa-facebook {
+  width: 100%;
+}
+.fa-twitter {
+  width: 100%;
+}
+.fa-instagram {
+  width: 100%;
+}
+.footer .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #F1F1F1;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) {
+  .footer {
+    font: bold 14px 'Roboto Condensed Light';
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+#header {
+  background-color: #101C3C;
+  height: 73px;
+  z-index: 20;
+  border-bottom: 4px solid #CF2E20;
+  width: 100%;
+}
+#header li {
+  line-height: 73px;
+  position: bottom;
+  margin-top: 30px;
+  font-family: 'Roboto Condensed Light';
+}
+#header li a .active {
+  background-color: #CF2E20;
+  color: #F1F1F1;
+}
+#header li a {
+  color: #F1F1F1;
+  font-size: 1.4em;
+  background-color: transparent;
+}
+#header li a:hover {
+  color: #CF2E20;
+  background-color: transparent;
+}
+#header li .dropdown-menu {
+  z-index: 25;
+  margin-top: -9px;
+  border: none;
+  box-shadow: none;
+  height: auto;
+  background-color: #CF2E20;
+  color: #F1F1F1;
+}
+#header li .dropdown-menu li {
+  display: inline;
+  text-align: center;
+}
+#header li .dropdown-menu li a:hover {
+  color: #101C3C;
+}
+#header #lplogo {
+  height: 100px;
+  width: auto;
+  position: fixed;
+  z-index: 25;
+  margin-top: -10px;
+}
+@media (min-width: 900px) {
+  #header #lpname {
+    height: 35px;
+    width: auto;
+    padding-left: 100px;
+    margin-top: 4%;
+  }
+}
+@media (max-width: 900px) {
+  #header #lpname {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+}
+#header .navbar-toggle {
+  margin-right: 25px;
+  margin-top: 15px;
+  background-color: transparent;
+  border: transparent;
+}
+#header .navbar-toggle .icon-bar {
+  background-color: #FFF;
+  height: 2px;
+  width: 30px;
+  margin-top: 7px;
+}
+.jssora05l,
+.jssora05r {
+  display: block;
+  position: absolute;
+  /* size of arrow element */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: url('../images/lunar_elevator/a17.png') no-repeat;
+  overflow: hidden;
+}
+.jssora05l {
+  background-position: -10px -40px;
+}
+.jssora05r {
+  background-position: -70px -40px;
+}
+.jssora05l:hover {
+  background-position: -130px -40px;
+}
+.jssora05r:hover {
+  background-position: -190px -40px;
+}
+.jssora05l.jssora05ldn {
+  background-position: -250px -40px;
+}
+.jssora05r.jssora05rdn {
+  background-position: -310px -40px;
+}
+/* jssor slider thumbnail navigator skin 01 css */
+/*
+.jssort01 .p            (normal)
+.jssort01 .p:hover      (normal mouseover)
+.jssort01 .p.pav        (active)
+.jssort01 .p.pdn        (mousedown)
+*/
+.jssort01 .p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 72px;
+}
+.jssort01 .t {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.jssort01 .w {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.jssort01 .c {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 68px;
+  height: 68px;
+  border: #000 2px solid;
+  box-sizing: content-box;
+  background: url('../images/lunar_elevator/t01.png') -800px -800px no-repeat;
+  _background: none;
+}
+.jssort01 .pav .c {
+  top: 2px;
+  _top: 0px;
+  left: 2px;
+  _left: 0px;
+  width: 68px;
+  height: 68px;
+  border: #000 0px solid;
+  _border: #fff 2px solid;
+  background-position: 50% 50%;
+}
+.jssort01 .p:hover .c {
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 70px;
+  border: #fff 1px solid;
+  background-position: 50% 50%;
+}
+.jssort01 .p.pdn .c {
+  background-position: 50% 50%;
+  width: 68px;
+  height: 68px;
+  border: #000 2px solid;
+}
+* html .jssort01 .c,
+* html .jssort01 .pdn .c,
+* html .jssort01 .pav .c {
+  /* ie quirks mode adjust */
+  width: 72px;
+  height: 72px;
+}
+.lunar-container {
+  margin: 7%;
+}
+.lunar-txt {
+  margin: 1em;
+}
+.videos {
+  text-align: center;
+  margin: 2em;
+}
+.documents {
+  text-align: center;
+  margin: 2em;
+}
+.txt-center {
+  text-align: center;
+}
+.pdfobject-container {
+  width: 100%;
+  height: 30em;
+}
+.pdfobject {
+  border: 1px solid #666;
+}
+.jssora05l,
+.jssora05r {
+  display: block;
+  position: absolute;
+  /* size of arrow element */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: url('../images/lunar_elevator/a17.png') no-repeat;
+  overflow: hidden;
+}
+.jssora05l {
+  background-position: -10px -40px;
+}
+.jssora05r {
+  background-position: -70px -40px;
+}
+.jssora05l:hover {
+  background-position: -130px -40px;
+}
+.jssora05r:hover {
+  background-position: -190px -40px;
+}
+.jssora05l.jssora05ldn {
+  background-position: -250px -40px;
+}
+.jssora05r.jssora05rdn {
+  background-position: -310px -40px;
+}
+/* jssor slider thumbnail navigator skin 01 css */
+/*
+.jssort01 .p            (normal)
+.jssort01 .p:hover      (normal mouseover)
+.jssort01 .p.pav        (active)
+.jssort01 .p.pdn        (mousedown)
+*/
+.jssort01 .p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 72px;
+}
+.jssort01 .t {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.jssort01 .w {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.jssort01 .c {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 68px;
+  height: 68px;
+  border: #000 2px solid;
+  box-sizing: content-box;
+  background: url('../images/lunar_elevator/t01.png') -800px -800px no-repeat;
+  _background: none;
+}
+.jssort01 .pav .c {
+  top: 2px;
+  _top: 0px;
+  left: 2px;
+  _left: 0px;
+  width: 68px;
+  height: 68px;
+  border: #000 0px solid;
+  _border: #fff 2px solid;
+  background-position: 50% 50%;
+}
+.jssort01 .p:hover .c {
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 70px;
+  border: #fff 1px solid;
+  background-position: 50% 50%;
+}
+.jssort01 .p.pdn .c {
+  background-position: 50% 50%;
+  width: 68px;
+  height: 68px;
+  border: #000 2px solid;
+}
+* html .jssort01 .c,
+* html .jssort01 .pdn .c,
+* html .jssort01 .pav .c {
+  /* ie quirks mode adjust */
+  width: 72px;
+  height: 72px;
+}
+.space-container {
+  margin: 7%;
+}
+.space-txt {
+  margin: 1em;
+}
+.videos {
+  text-align: center;
+  margin: 2em;
+}
+.documents {
+  text-align: center;
+  margin: 2em;
+}
+.txt-center {
+  text-align: center;
+}
+.pdfobject-container {
+  height: 30em;
+}
+.pdfobject {
+  border: 1px solid #666;
+}
+.container {
+  padding-top: 1em;
+  background-color: white;
+  background-image: url();
+  width: 100%;
+}
+.container .volunteer {
+  background-color: #101C3C;
+  color: white;
+}
+.container .section {
+  padding-top: 100px;
+  border-bottom: 1px solid #A7A9AC;
+  margin: 0 auto;
+}
+.container .section h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #CF2E20;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+.container .section p {
+  margin-left: 25%;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 100px;
+  font-size: 1em;
+}
+.container .section .btn {
+  background-color: #CF2E20;
+  color: white;
+}
+.container .section .signUp {
+  padding-bottom: 100px;
+  width: 50%;
+  margin-left: 25%;
+}
+@media screen and (max-width: 800px) {
+  .section {
+    margin: 0 auto;
+    padding: 0;
+  }
+  p {
+    text-align: left;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section {
+    margin: 0 auto;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    margin: 0 auto;
+    padding-right: 2em;
+  }
+}
+.landingPage {
+  max-height: 800px;
+  width: 100%;
+  height: 800px;
+}
+#sectionLanding {
+  overflow: hidden;
+}
+#sectionLanding .layer0 {
+  width: auto;
+  height: 900px;
+}
+#sectionLanding .layer0 #moon {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  max-width: 2560px;
+  max-height: 700px;
+}
+#sectionLanding .layer1 {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+}
+#sectionLanding #bgvid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 2560px;
+  height: 650px;
+  background-size: 100% 100%;
+  background-color: black;
+  /* in case the video doesn't fit the whole page*/
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: -10;
+  overflow: hidden;
+}
+#sectionLanding .title {
+  padding-top: 20px;
+}
+#sectionLanding .landingTextArea {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2%;
+  margin-top: 3%;
+  text-align: center;
+  max-height: 60%;
+  margin-bottom: 5%;
+}
+#sectionLanding .landingTextArea background {
+  filter: blur(0.2);
+}
+#sectionLanding .landingTextArea .landingText {
+  color: #F1F1F1;
+  font-size: 2.5em;
+  border-bottom: 1px solid white;
+}
+.slider {
+  /* set initial width */
+  max-width: 2160px;
+  width: 65%;
+  text-align: center;
+  z-index: 20;
+  /* hide the content that overflows (to allow second box to show through) */
+  overflow: hidden;
+  display: inline-block;
+  /* skew container so that it has angled edge, and set up transition */
+  transform: skewX(-10deg);
+  transition: width 1.2s ease-in-out;
+  /* give negative margin to remove gap caused by left hand skew */
+  margin-left: -250px;
+  border-right: 10px solid ghostwhite;
+  /* hide pointer events for unseen content */
+  pointer-events: none;
+}
+/* set the size of the boxes and any decoration */
+.box {
+  width: 100%;
+  height: 750px;
+}
+/* make the links the size of the full boxes (not needed for technique) */
+.box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.spaceland {
+  /* skew back by negative of parent’s skew so contents is upright */
+  transform: skewX(10deg);
+  background: url(../images/canaan_martin/LSEIBlueprintScaled.jpg) no-repeat;
+  margin-left: 150px;
+  /* give margin to push content away from left slanted edge */
+  pointer-events: auto;
+  /* allow pointer events for the box */
+  height: 750px;
+  max-height: 750px;
+}
+.lunaland {
+  background: url(../images/space_elevator/space_elevator-5.jpg) no-repeat;
+  position: absolute;
+  /* remove from flow so sunset is placed on top */
+  background-size: cover;
+  height: 750px;
+}
+/* make first box bigger on hover, and smaller when hover second box */
+.slider:hover {
+  width: 90%;
+}
+.lunaland:hover + .slider {
+  width: 45%;
+}
+.learnMore {
+  text-align: center;
+}
+.lsei {
+  text-align: center;
+}
+.lunarElevatorText {
+  position: absolute;
+  margin-top: 50px;
+}

@@ -35,45 +35,46 @@
   <!--
   </script>
   <!--NAVBAR START-->
-  <nav id="header" class="navbar navbar-default liftPortNav">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-          aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+  <div>
+    <nav id="header" class="navbar navbar-fixed-top liftPortNav">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-        <a class="navbar-brand" href="/">
-          <img alt="Brand" id="lplogo" src="images/LiftPort-Logo-Navy-Back.png">
-        </a>
-        <a class="navbar-brand" href="/">
-          <img alt="liftport" id="lpname" src="images/4_LiftPort_Logo_(website).png">
-        </a>
-      </div>
+            <a class="navbar-brand" href="#/">
+            <img alt="Brand" id="lplogo" src="images/LiftPort-Logo-Navy-Back.png">
+            </a>
+            <a class="navbar-brand" href="#/">
+            <img alt="liftport" id="lpname" src="images/4_LiftPort_Logo_(website).png">
+            </a>
+        </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elevators<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#spaceelevator">Space Elevator</a></li>
-              <li><a href="#lunarelevator">Lunar Elevator</a></li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navlinks">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elevators<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#spaceelevator">Space Elevator</a></li>
+                    <li><a href="#lunarelevator">Lunar Elevator</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about" data-toggle="pill">About<span class="sr-only">(current)</span></a></li>
+                <li><a href="#museum" data-toggle="pill">Museum</a></li>
+                <li><a href="#techdocs" data-toggle="pill">Technical Docs</a></li>
             </ul>
-          </li>
-          <li><a href="#about" data-toggle="pill">About<span class="sr-only">(current)</span></a></li>
-          <li><a href="#museum" data-toggle="pill">Museum</a></li>
-          <li><a href="#techdocs" data-toggle="pill">Technical Docs</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
+        </div>
+        <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+  </div>
 
   <div class="viewport" ng-view=""></div>
 
@@ -173,6 +174,7 @@
   <script src="scripts/controllers/lunarelevator.js"></script>
   <script src="scripts/controllers/spaceelevator.js"></script>
   <script src="bower_components/angular-route-styles/route-styles.js"></script>
+  <script src="bower_components/bootstrap-autohidingnavbar/dist/jquery.bootstrap-autohidingnavbar.min.js"></script>
   <!-- endbuild -->
 </body>
 

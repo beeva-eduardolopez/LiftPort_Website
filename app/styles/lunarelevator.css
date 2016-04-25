@@ -32,10 +32,13 @@
   font-family: 'Oswald Bold';
   font-size: 5em;
   color: #101C3C;
-
 }
 .viewport {
   padding-top: 73px;
+}
+.spacerBox {
+  width: 100%;
+  max-height: 80px;
 }
 .footer {
   border-top: 4px solid #CF2E20;
@@ -196,13 +199,22 @@
   font-size: 21px;
   padding: 14px 24px;
 }
+.navbar-fixed-top {
+  height: 110px;
+}
 #header {
-  background-color: #101C3C;
-  height: 73px;
-  z-index: 20;
+  background-color: transparent;
+  height: 100px;
+  z-index: 200;
   border-bottom: 4px solid #CF2E20;
-  position: fixed;
   width: 100%;
+}
+#header .navlinks {
+  width: 100%;
+  height: 73px;
+  background-color: #101C3C;
+  border-bottom: 4px solid #CF2E20;
+  text-align: right;
 }
 #header li {
   line-height: 73px;
@@ -295,14 +307,11 @@
 }
 #sectionLanding .layer1 {
   position: absolute;
-  z-index: 9999;
+  z-index: 100;
   top: 0;
   width: 100%;
   text-align: center;
   background: transparent;
-  z-index: 4;
-  width: 100%;
-
 }
 #sectionLanding #bgvid {
   position: absolute;
@@ -318,7 +327,6 @@
   background-size: contain;
   object-fit: cover;
   /*cover video background */
-
   z-index: -10;
   overflow: hidden;
 }
@@ -340,10 +348,70 @@
   color: #F1F1F1;
   font-size: 2.5em;
   border-bottom: 1px solid white;
-
-  z-index: 3;
-  overflow: auto;
-
+}
+.slider {
+  /* set initial width */
+  max-width: 2160px;
+  width: 65%;
+  text-align: center;
+  z-index: 20;
+  /* hide the content that overflows (to allow second box to show through) */
+  overflow: hidden;
+  display: inline-block;
+  /* skew container so that it has angled edge, and set up transition */
+  transform: skewX(-10deg);
+  transition: width 1.2s ease-in-out;
+  /* give negative margin to remove gap caused by left hand skew */
+  margin-left: -250px;
+  border-right: 10px solid ghostwhite;
+  /* hide pointer events for unseen content */
+  pointer-events: none;
+}
+/* set the size of the boxes and any decoration */
+.box {
+  width: 100%;
+  height: 750px;
+}
+/* make the links the size of the full boxes (not needed for technique) */
+.box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.spaceland {
+  /* skew back by negative of parent’s skew so contents is upright */
+  transform: skewX(10deg);
+  background: url(../images/canaan_martin/LSEIBlueprintScaled.jpg) no-repeat;
+  margin-left: 150px;
+  /* give margin to push content away from left slanted edge */
+  pointer-events: auto;
+  /* allow pointer events for the box */
+  height: 750px;
+  max-height: 750px;
+}
+.lunaland {
+  background: url(../images/space_elevator/space_elevator-5.jpg) no-repeat;
+  position: absolute;
+  /* remove from flow so sunset is placed on top */
+  background-size: cover;
+  height: 750px;
+}
+/* make first box bigger on hover, and smaller when hover second box */
+.slider:hover {
+  width: 90%;
+}
+.lunaland:hover + .slider {
+  width: 45%;
+}
+.learnMore {
+  text-align: center;
+}
+.lsei {
+  text-align: center;
+}
+.lunarElevatorText {
+  position: absolute;
+  margin-top: 50px;
 }
 .jssora05l,
 .jssora05r {
@@ -507,15 +575,10 @@
   width: 50%;
   margin-left: 25%;
 }
-@media scree and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .section {
     margin: 0 auto;
     padding: 0;
-  }
-  h1 {
-    transform: rotate(90deg);
-    transform-origin: right top 0;
-    float: right;
   }
   p {
     text-align: left;
@@ -528,12 +591,9 @@
     width: 100%;
   }
   h1 {
-    transform: rotate(90deg);
-    transform-origin: right top 0;
     font-size: 2em;
   }
   p {
-    text-align: left;
     margin: 0 auto;
     padding-right: 2em;
   }
