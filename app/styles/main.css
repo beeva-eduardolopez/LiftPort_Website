@@ -727,7 +727,7 @@
     padding-right: 2em;
   }
 }
-.hero {
+.museumHero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -735,7 +735,7 @@
   overflow: hidden;
   height: 130vh;
 }
-.hero h1 {
+.museumHero h1 {
   text-transform: uppercase;
   text-align: center;
   color: #CF2E20;
