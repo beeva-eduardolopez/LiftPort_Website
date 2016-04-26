@@ -99,12 +99,12 @@ angular.module('liftPortWebsiteApp')
             var myPDF = PDFObject.embed("../pdfs/ladder.pdf", "#pdf", options);
 
             var el = document.querySelector("#results");
-            $scope.stylePDF="succes";
+            $scope.stylePDF="success";
             el.setAttribute("class", (myPDF) ? "{{stylePDF}}" : "fail");
         });
 
         $scope.closePDF = function (value) {
-            $scope.stylePDF=  "hidden";
+            $scope.stylePDF=  "embed-link";
         };
 
     });
