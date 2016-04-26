@@ -30,23 +30,30 @@ angular.module('liftPortWebsiteApp')
                     }
         });
         //Navbar show-hide controls. Utilizes plugin Bootstrap-AutoHidingNavbar and basic JQuery
-        $('.navbar-fixed-top').autoHidingNavbar('hide', true);
+        if (window.innerWidth >899 ){
+        $('.navbar-fixed-top').autoHidingNavbar().autoHidingNavbar('hide', true).autoHidingNavbar('setShowOnBottom',false);
+        } else{
+            $('.navbar-fixed-top').autoHidingNavbar();
+        }
+        
         $('.onHidden').on('click', function(){
             console.log('clicked!')
             $('.navbar-fixed-top').autoHidingNavbar('show');
         }) 
+        
+        
         $(window).scroll( function() {
             var value = $(window).scrollTop();
                 if (value === 0){
-                    $('.navbar-fixed-top').autoHidingNavbar('hide', true);
-                } else if ( value < 10 ) {
-                    console.log('top')
-                    $('.navbar-fixed-top').autoHidingNavbar('hide', true);
-                }  else {
+                    if (window.innerWidth > 900) {
+                        if (location.href.split('#').pop() === '/') {
+                            $('.navbar-fixed-top').autoHidingNavbar('hide', true);
+                        }
+                    }
+                } else {
                     $('.navbar-fixed-top').autoHidingNavbar();
                 }
-        });
         
-    
-    })
+        });    
+    });
 });
