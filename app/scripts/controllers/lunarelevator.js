@@ -10,12 +10,12 @@ angular.module('liftPortWebsiteApp')
             //     fixedElements: '#header',
             //     autoScrolling: false,
             //     verticalCentered: false,
-            //     normalScrollElements: '#jssor_1, fullpage',
+            //     normalScrollElements: '#jssor_2, fullpage',
             //     //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
             //     css3: false
             // });
 
-            var jssor_1_SlideshowTransitions = [
+            var jssor_2_SlideshowTransitions = [
                 { $Duration: 1200, x: 0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
                 { $Duration: 1200, x: -0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
                 { $Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
@@ -40,11 +40,11 @@ angular.module('liftPortWebsiteApp')
                 { $Duration: 1200, $Delay: 20, $Clip: 12, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $Jease$.$OutCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 }
             ];
 
-            var jssor_1_options = {
+            var jssor_2_options = {
                 $AutoPlay: true,
                 $SlideshowOptions: {
                     $Class: $JssorSlideshowRunner$,
-                    $Transitions: jssor_1_SlideshowTransitions,
+                    $Transitions: jssor_2_SlideshowTransitions,
                     $TransitionsOrder: 1
                 },
                 $ArrowNavigatorOptions: {
@@ -58,16 +58,16 @@ angular.module('liftPortWebsiteApp')
                     $Align: 360
                 }
             };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
 
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizing
             function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                var refSize = jssor_2_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
                     refSize = Math.min(refSize, 800);
-                    jssor_1_slider.$ScaleWidth(refSize);
+                    jssor_2_slider.$ScaleWidth(refSize);
                 }
                 else {
                     window.setTimeout(ScaleSlider, 30);
