@@ -1,12 +1,5 @@
 node_modules
 dist
 .tmp
-<<<<<<< HEAD
-<<<<<<< HEAD
 .sass-cache
-=======
-.sass-cache
->>>>>>> d5b1d3eb80f2112b03e742ef1b35e5dfdd58014b
-=======
-.sass-cache
->>>>>>> d5b1d3eb80f2112b03e742ef1b35e5dfdd58014b
+
