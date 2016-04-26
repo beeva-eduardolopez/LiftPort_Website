@@ -3,17 +3,17 @@
 angular.module('liftPortWebsiteApp')
     .controller('LunarElevatorCtrl', function ($scope) {
         $(document).ready(function () {
-            if (typeof $.fn.fullpage.destroy == 'function') {
-                $.fn.fullpage.destroy('all');
-            }
-            $('#fullpage').fullpage({
-                fixedElements: '#header',
-                autoScrolling: false,
-                verticalCentered: false,
-                normalScrollElements: '#jssor_1, fullpage',
-                //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-                css3: false
-            });
+            // if (typeof $.fn.fullpage.destroy == 'function') {
+            //     $.fn.fullpage.destroy('all');
+            // }
+            // $('#fullpage').fullpage({
+            //     fixedElements: '#header',
+            //     autoScrolling: false,
+            //     verticalCentered: false,
+            //     normalScrollElements: '#jssor_1, fullpage',
+            //     //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+            //     css3: false
+            // });
 
             var jssor_1_SlideshowTransitions = [
                 { $Duration: 1200, x: 0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
@@ -99,7 +99,12 @@ angular.module('liftPortWebsiteApp')
             var myPDF = PDFObject.embed("../pdfs/ladder.pdf", "#pdf", options);
 
             var el = document.querySelector("#results");
-            el.setAttribute("class", (myPDF) ? "success" : "fail");           
+            $scope.stylePDF="succes";
+            el.setAttribute("class", (myPDF) ? "{{stylePDF}}" : "fail");
         });
+
+        $scope.closePDF = function (value) {
+            $scope.stylePDF=  "hidden";
+        };
 
     });
