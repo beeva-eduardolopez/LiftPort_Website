@@ -623,15 +623,10 @@
   width: 50%;
   margin-left: 25%;
 }
-@media scree and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .section {
     margin: 0 auto;
     padding: 0;
-  }
-  h1 {
-    transform: rotate(90deg);
-    transform-origin: right top 0;
-    float: right;
   }
   p {
     text-align: left;
@@ -644,12 +639,83 @@
     width: 100%;
   }
   h1 {
-    transform: rotate(90deg);
-    transform-origin: right top 0;
     font-size: 2em;
   }
   p {
+    margin: 0 auto;
+    padding-right: 2em;
+  }
+}
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../images/iss028e020072_lrg.jpg');
+  overflow: hidden;
+  height: 130vh;
+}
+.hero h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #CF2E20;
+  font-size: 6em;
+  color: white;
+  margin-top: 5em;
+  font-family: 'Oswald Bold';
+}
+.museumContainer {
+  background-color: white;
+  background-image: url();
+  width: 100%;
+  margin: 0 auto;
+}
+.museumContainer .section {
+  border-bottom: 1px solid #A7A9AC;
+  margin: 0 auto;
+}
+.museumContainer .section h2 {
+  text-transform: uppercase;
+  font-family: 'Oswald Bold';
+  font-size: 5em;
+  color: #101C3C;
+  text-align: center;
+}
+.museumContainer .section p {
+  margin-left: 25%;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 100px;
+  font-size: 1em;
+  font-family: Roboto Condensed;
+}
+.museumContainer .section .btn {
+  background-color: #CF2E20;
+  color: white;
+}
+.museumContainer .section .signUp {
+  padding-bottom: 100px;
+  width: 50%;
+  margin-left: 25%;
+}
+@media screen and (max-width: 800px) {
+  .section {
+    margin: 0 auto;
+    padding: 0;
+  }
+  p {
     text-align: left;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section {
+    margin: 0 auto;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p {
     margin: 0 auto;
     padding-right: 2em;
   }
