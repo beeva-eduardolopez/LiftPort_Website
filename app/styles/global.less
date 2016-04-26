@@ -51,13 +51,108 @@
         color:@brandPrimary;
     }
 }
-// .viewport{
-//     padding-top: @navbarheight
-// }
+
 .spacerBox{
     width: 100%;
     max-height: 80px;
 }
+
+// NAVBAR - HEADER
+
+.navbar-fixed-top{
+    height: 110px;
+}
+.colorNav{
+    background-color: @brandPrimary;
+    border-bottom: 4px solid @brandSecondary;
+}
+.onHidden{
+    z-index: 110;
+    position: fixed;
+    height: 80px;
+    width: auto;
+    right: 0;
+    top: 0;
+    background-color: rgba(255,255,255,0.3);  
+}
+
+#header {
+background-color: transparent;
+height: 100px;
+z-index: 200;
+width: 100%;
+    li {
+        line-height: @navbarheight;
+        padding-right: 20px;
+        position: bottom;
+        margin-top: 30px;
+        font-family: 'Roboto Condensed Light';
+        a .active {
+            background-color: @brandSecondary;
+            color: @brandFontPrimary;
+        }
+        a{
+            color: @brandFontPrimary;
+            font-size: 1.4em;
+            background-color: transparent;
+        }
+        a:hover {
+            color: @brandSecondary;
+            background-color: transparent;
+        }
+        .dropdown-menu{
+            z-index: 25;
+            margin-top: -9px;
+            border: none;
+            box-shadow: none;
+            height: auto; 
+            background-color: @brandSecondary;
+            color: @brandFontPrimary;
+            li{
+                display: inline; 
+                text-align: center;
+            }
+            li a:hover{
+                color: @brandPrimary;
+            }
+        }
+    }
+    #lplogo {
+        height: 100px; 
+        width: auto;
+        position: fixed;
+        z-index: 25;
+        margin-top: -10px;
+    }
+    #lpname {
+        @media (min-width: 900px){
+            height: 35px; 
+            width: auto;
+            padding-left: 80px; 
+            margin-top: 4%;
+        }
+        @media (max-width: 900px){
+            height: 0px;
+            width:0px;
+            opacity: 0;
+        }
+    }
+    .navbar-toggle{
+        margin-right: 25px;
+        margin-top: 15px;
+        background-color: transparent;
+        border: transparent;
+        .icon-bar {
+        background-color: #FFF;
+        height: 2px;
+        width: 30px;
+        margin-top: 7px;
+        }
+    }
+}
+
+
+//FOOTER
 .footer{
     border-top: 4px solid @brandSecondary;
 	background-color: @brandPrimary;
@@ -253,85 +348,5 @@
     font-size: 21px;
     padding: 14px 24px;
     
-    }
-}
-.navbar-fixed-top{
-    height: 110px;
-}
-.colorNav{
-    background-color: @brandPrimary;
-    border-bottom: 4px solid @brandSecondary;
-}
-#header {
-background-color: transparent;
-height: 100px;
-z-index: 200;
-width: 100%;
-    li {
-        line-height: @navbarheight;
-        position: bottom;
-        margin-top: 30px;
-        font-family: 'Roboto Condensed Light';
-        a .active {
-            background-color: @brandSecondary;
-            color: @brandFontPrimary;
-        }
-        a{
-            color: @brandFontPrimary;
-            font-size: 1.4em;
-            background-color: transparent;
-        }
-        a:hover {
-            color: @brandSecondary;
-            background-color: transparent;
-        }
-        .dropdown-menu{
-            z-index: 25;
-            margin-top: -9px;
-            border: none;
-            box-shadow: none;
-            height: auto; 
-            background-color: @brandSecondary;
-            color: @brandFontPrimary;
-            li{
-                display: inline; 
-                text-align: center;
-            }
-            li a:hover{
-                color: @brandPrimary;
-            }
-        }
-    }
-    #lplogo {
-        height: 100px; 
-        width: auto;
-        position: fixed;
-        z-index: 25;
-        margin-top: -10px;
-    }
-    #lpname {
-        @media (min-width: 900px){
-            height: 35px; 
-            width: auto;
-            padding-left: 100px; 
-            margin-top: 4%;
-        }
-        @media (max-width: 900px){
-            height: 0px;
-            width:0px;
-            opacity: 0;
-        }
-    }
-    .navbar-toggle{
-        margin-right: 25px;
-        margin-top: 15px;
-        background-color: transparent;
-        border: transparent;
-        .icon-bar {
-        background-color: #FFF;
-        height: 2px;
-        width: 30px;
-        margin-top: 7px;
-        }
     }
 }
