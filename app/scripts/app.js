@@ -37,20 +37,17 @@ angular
 
       .when('/lunarelevator', {
         templateUrl: 'views/lunarelevator.html',
-        controller: 'LunarElevatorCtrl',
-        css: 'styles/lunarelevator.css'
+        controller: 'LunarElevatorCtrl'
       })
 
       .when('/spaceelevator', {
         templateUrl: 'views/spaceelevator.html',
-        controller: 'SpaceElevatorCtrl',
-        css: 'styles/spaceelevator.css'
+        controller: 'SpaceElevatorCtrl'
       })
 
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        css: 'styles/about.css'
+        controller: 'AboutCtrl'
       })
       .otherwise({
         redirectTo: '/'
