@@ -100,7 +100,7 @@ angular.module('liftPortWebsiteApp')
 
             var el = document.querySelector("#results");
             $scope.stylePDF="success";
-            el.setAttribute("class", (myPDF) ? "{{stylePDF}}" : "fail");
+            el.setAttribute("class", (myPDF) ? '{{stylePDF}}' : "fail");
         });
 
         $scope.closePDF = function (value) {
