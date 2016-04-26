@@ -33,9 +33,6 @@
   font-size: 5em;
   color: #101C3C;
 }
-.viewport {
-  padding-top: 73px;
-}
 .spacerBox {
   width: 100%;
   max-height: 80px;
@@ -202,19 +199,15 @@
 .navbar-fixed-top {
   height: 110px;
 }
+.colorNav {
+  background-color: #101C3C;
+  border-bottom: 4px solid #CF2E20;
+}
 #header {
   background-color: transparent;
   height: 100px;
   z-index: 200;
-  border-bottom: 4px solid #CF2E20;
   width: 100%;
-}
-#header .navlinks {
-  width: 100%;
-  height: 73px;
-  background-color: #101C3C;
-  border-bottom: 4px solid #CF2E20;
-  text-align: right;
 }
 #header li {
   line-height: 73px;
@@ -315,6 +308,7 @@
 }
 #sectionLanding #bgvid {
   position: absolute;
+  margin-top: -80px;
   top: 0;
   right: 0;
   width: 100%;

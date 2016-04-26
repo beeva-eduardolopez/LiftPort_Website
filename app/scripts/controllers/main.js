@@ -28,7 +28,7 @@ angular.module('liftPortWebsiteApp')
 					$('video').get(0).play();
 				}
      });
-    $('.navbar-fixed-top').autoHidingNavbar().autoHidingNavbar('setHeightOffset',100);
+    $('.navbar-fixed-top').autoHidingNavbar().autoHidingNavbar('setHeightOffset',100).autoHidingNavbar('hide', true);
    });
     // $scope.awesomeThings = [
     //   'HTML5 Boilerplate',
