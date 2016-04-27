@@ -65,12 +65,12 @@
         }
     }
 }
-@sliderBoxHeight: 750px;
+@sliderBoxHeight: 550px;
 
 .slider {
 	/* set initial width */
 	max-width: 2160px;
-	width: 65%;
+	width: 66.6%;
 	text-align: center;
     z-index: 20; 
 	/* hide the content that overflows (to allow second box to show through) */
@@ -106,19 +106,28 @@
 .spaceland {
 	/* skew back by negative of parent’s skew so contents is upright */
 	transform: skewX(10deg);
-	background: url(../images/canaan_martin/LSEIBlueprintScaled.jpg) no-repeat;
+	background: url(../images/main_view/LSEIBluePrintOff.jpg) no-repeat;
 	margin-left: 150px; /* give margin to push content away from left slanted edge */
 	pointer-events: auto;	/* allow pointer events for the box */
     height: 750px;
     max-height: @sliderBoxHeight
 }
+.spaceland:hover{
+    background: url('../images/main_view/LSEIBluePrintOn.jpg') no-repeat;
+}
 
 .lunaland {
-	background:  url(../images/space_elevator/space_elevator-5.jpg) no-repeat;
+	background:  url(../images/main_view/spaceelevatoroff.jpg) no-repeat;
 	position: absolute; 	/* remove from flow so sunset is placed on top */
     background-size: cover;
 	height: @sliderBoxHeight
 }
+.lunaland:hover{
+    background: url('../images/main_view/spaceelevatorhover.jpg') no-repeat;
+    height: @sliderBoxHeight;
+    background-size: cover;
+}
+
 	
 	/* make first box bigger on hover, and smaller when hover second box */
 .slider:hover {
