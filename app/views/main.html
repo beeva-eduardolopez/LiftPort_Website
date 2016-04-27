@@ -2,13 +2,16 @@
 <div id="fullpage">
     <div class="section" id="sectionLanding">
         <div class="landingPage">
-            <div class="hide-below-lg">
+            <div class="visible-lg visible-md visible-sm">
                 <video autoplay loop muted id="bgvid">
                     <source src="images/main_view/STAR_SKY_HD_background_loop.webm" type="video/webm">
                     <source src="images/main_view/STAR SKY HD background loop.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="layer0">
+            <div class="mobileBackground col-xs-12 hidden-sm hidden-md hidden-lg">
+                <img src="images/main_view/mobilebg.jpg">
+            </div>
+            <div class="layer0 visible-md visible-lg">
                 <img id="moon" src="images/main_view/landingpagefinal.png">
             </div>
             <div class="container layer1">
@@ -19,17 +22,31 @@
               
                 <div class="col-md-5 col-md-offset-2 landingTextArea">
                     <div class="landingText">
-                        <p>Your Text Here. Tell me what a lunar elevator gives me. Tell me why I should care. Tell me why you're the best. Lorem Ipsum.</p> 
+                        <p>LiftPort is pushing the limits of engineering to propel humanity towards the stars. With a Lunar Space Elevator Infrastructure, we hope to give humanity quick access to long-term lunar exploration, and the resources it can provide.</p> 
                     </div>
-                    <div class="callToAction">
-                        <h4 class="paragraphStyle">Enter Your Email For LiftPort News And Updates</h4>
-                        <textarea name="email" id="email" cols="30" rows="1" placeholder="email"></textarea>
-                        <button class="buttonLight">Submit</button>
+                    <div class="callToAction paragraphStyle">
+                        <p >If you'd like to receive updates on our mission direct to your inbox, sign up below!</p>
+                        <button class="buttonLight">SIGN UP</button>
                     </div>
                 </div>
             </div>
             
         </div>
+    </div>
+    <div class="section lEsE">
+            <div class="lunarElevatorText">
+            </div>
+            <div class="spacerbox headerStyle">
+                <h1 class="lsei">KEY PROJECTS</h1>
+            </div>
+            <div class="box lunaland">
+                <a href="#spaceelevator"></a>
+            </div>
+            <div class="slider">
+                <div class="box spaceland">
+                    <a href="#lunarelevator"></a>
+                </div>
+            </div>
     </div>
     <div class="section">
         <div class="container">
@@ -53,19 +70,5 @@
             </div>
         </div> 
     </div>
-    <div class="section lEsE">
-            <div class="lunarElevatorText">
-            </div>
-            <div class="spacerbox">
-                <h1 class="headerStyle lsei">Lunar Elevator and Space Elevator</h1>
-            </div>
-            <div class="box lunaland">
-                <a href="#lunarelevator"></a>
-            </div>
-            <div class="slider">
-                <div class="box spaceland">
-                    <a href="#spaceelevator"></a>
-                </div>
-            </div>
-    </div>
+    
 </div>
