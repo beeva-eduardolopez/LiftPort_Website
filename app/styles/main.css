@@ -41,7 +41,7 @@
   height: 110px;
 }
 .colorNav {
-  background-color: #101C3C;
+  background-image: url('../images/main_view/liftPorthoneycomb.png');
   border-bottom: 4px solid #CF2E20;
 }
 .onHidden {
