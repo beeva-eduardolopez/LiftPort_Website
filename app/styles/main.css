@@ -727,7 +727,13 @@
     padding-right: 2em;
   }
 }
-.museumHero {
+.museumContainer {
+  background-color: white;
+  background-image: url();
+  width: 100%;
+  margin: 0 auto;
+}
+.museumContainer .museumHero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -735,7 +741,7 @@
   overflow: hidden;
   height: 130vh;
 }
-.museumHero h1 {
+.museumContainer .museumHero h1 {
   text-transform: uppercase;
   text-align: center;
   color: #CF2E20;
@@ -743,12 +749,6 @@
   color: white;
   margin-top: 5em;
   font-family: 'Oswald Bold';
-}
-.museumContainer {
-  background-color: white;
-  background-image: url();
-  width: 100%;
-  margin: 0 auto;
 }
 .museumContainer .section {
   border-bottom: 1px solid #A7A9AC;
@@ -758,7 +758,7 @@
   text-transform: uppercase;
   font-family: 'Oswald Bold';
   font-size: 5em;
-  color: #101C3C;
+  color: #CF2E20;
   text-align: center;
 }
 .museumContainer .section p {
