@@ -425,6 +425,61 @@
   position: absolute;
   margin-top: 50px;
 }
+.lunarHero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../images/lunar_elevator/lunarHero.jpg');
+  overflow: hidden;
+  height: 130vh;
+}
+.lunarHero h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #CF2E20;
+  font-size: 6em;
+  color: white;
+  margin-top: 5em;
+  font-family: 'Oswald Bold';
+}
+.section_0 {
+  background-color: #A7A9AC;
+  overflow: hidden;
+  padding-bottom: 4em;
+}
+.section_0 h1 {
+  color: #CF2E20 !important;
+  font-size: 3em;
+  padding: 1em;
+}
+.section_0 p {
+  padding: 2em;
+}
+.section_1 {
+  overflow: hidden;
+  padding-bottom: 4em;
+}
+.section_1 h1 {
+  color: #CF2E20 !important;
+  font-size: 3em;
+  padding: 1em;
+}
+.section_1 p {
+  padding: 2em;
+}
+.section_2 {
+  background-color: #A7A9AC;
+  overflow: hidden;
+  padding-bottom: 4em;
+}
+.section_2 h1 {
+  color: #CF2E20 !important;
+  font-size: 3em;
+  padding: 1em;
+}
+.section_2 p {
+  padding: 2em;
+}
 .jssora05l,
 .jssora05r {
   display: block;
@@ -454,13 +509,6 @@
 .jssora05r.jssora05rdn {
   background-position: -310px -40px;
 }
-/* jssor slider thumbnail navigator skin 01 css */
-/*
-.jssort01 .p            (normal)
-.jssort01 .p:hover      (normal mouseover)
-.jssort01 .p.pav        (active)
-.jssort01 .p.pdn        (mousedown)
-*/
 .jssort01 .p {
   position: absolute;
   top: 0;
@@ -528,6 +576,8 @@
 }
 .lunar-container {
   margin: 7%;
+  background-color: white;
+  border-radius: 5px;
 }
 .lunar-txt {
   margin: 1em;
@@ -549,6 +599,61 @@
 }
 .pdfobject {
   border: 1px solid #666;
+}
+.section_0 {
+  background-color: #A7A9AC;
+  overflow: hidden;
+  padding-bottom: 4em;
+}
+.section_0 h1 {
+  color: #CF2E20 !important;
+  font-size: 3em;
+  padding: 1em;
+}
+.section_0 p {
+  padding: 2em;
+}
+.section_1 {
+  overflow: hidden;
+  padding-bottom: 4em;
+}
+.section_1 h1 {
+  color: #CF2E20 !important;
+  font-size: 3em;
+  padding: 1em;
+}
+.section_1 p {
+  padding: 2em;
+}
+.section_2 {
+  background-color: #A7A9AC;
+  overflow: hidden;
+  padding-bottom: 4em;
+}
+.section_2 h1 {
+  color: #CF2E20 !important;
+  font-size: 3em;
+  padding: 1em;
+}
+.section_2 p {
+  padding: 2em;
+}
+.spaceHero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../images/space_elevator/spaceHero.jpg');
+  overflow: hidden;
+  height: 130vh;
+}
+.spaceHero h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #CF2E20;
+  font-size: 6em;
+  color: white;
+  margin-top: 5em;
+  font-family: 'Oswald Bold';
 }
 .jssora05l,
 .jssora05r {
@@ -653,6 +758,8 @@
 }
 .space-container {
   margin: 7%;
+  background-color: white;
+  border-radius: 5px;
 }
 .space-txt {
   margin: 1em;
@@ -660,6 +767,9 @@
 .videos {
   text-align: center;
   margin: 2em;
+}
+.video {
+  padding: 2em;
 }
 .documents {
   text-align: center;
