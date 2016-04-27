@@ -1,26 +1,77 @@
 
 @import "global.less";
 
-// #section0 {
-//     background-image: url(../images/Drifter_wallpaper_A_1366x768.jpg);
-//     padding: 30% 0 0 0;
-// }
+ .lunarHero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/lunar_elevator/lunarHero.jpg');
+    overflow: hidden;
+    height: 130vh;
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: @brandSecondary;
+        font-size: 6em;
+        color: white;
+        margin-top: 5em;
+        font-family: 'Oswald Bold';         
+    }   
+    
+}
 
-// .section {
-//     background-size: cover;
-//     text-align: center;
-// }
+.section_0{
+    background-color: @brandFontSecondary;
+    overflow: hidden;
+    padding-bottom: 4em;
+    h1{
+        color: @brandSecondary !important;
+        font-size: 3em;
+        padding: 1em;
+    }
+    p{
+        padding: 2em;
+    }
+}
+
+.section_1{
+    // background-color: @brandFontSecondary;
+    overflow: hidden;
+    padding-bottom: 4em;
+    h1{
+        color: @brandSecondary !important;
+        font-size: 3em;
+        padding: 1em;
+    }
+    p{
+        padding: 2em;
+    }
+}
+
+.section_2{
+    background-color: @brandFontSecondary;
+    overflow: hidden;
+    padding-bottom: 4em;
+    h1{
+        color: @brandSecondary !important;
+        font-size: 3em;
+        padding: 1em;
+    }
+    p{
+        padding: 2em;
+    }
+}
 
 
  .jssora05l, .jssora05r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            background: url('../images/lunar_elevator/a17.png') no-repeat;
-            overflow: hidden;
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('../images/lunar_elevator/a17.png') no-repeat;
+    overflow: hidden;
 }
 .jssora05l { background-position: -10px -40px; }
 .jssora05r { background-position: -70px -40px; }
@@ -29,13 +80,7 @@
 .jssora05l.jssora05ldn { background-position: -250px -40px; }
 .jssora05r.jssora05rdn { background-position: -310px -40px; }
 
-/* jssor slider thumbnail navigator skin 01 css */
-/*
-.jssort01 .p            (normal)
-.jssort01 .p:hover      (normal mouseover)
-.jssort01 .p.pav        (active)
-.jssort01 .p.pdn        (mousedown)
-*/
+
 .jssort01 .p {
     position: absolute;
     top: 0;
@@ -109,6 +154,8 @@
 }
 .lunar-container{
     margin: @containerpad;
+    background-color: white;
+    border-radius: @borderradius;
 }
 .lunar-txt{
     margin: 1em;
