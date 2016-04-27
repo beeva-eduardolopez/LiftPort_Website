@@ -727,7 +727,13 @@
     padding-right: 2em;
   }
 }
-.museumHero {
+.museumContainer {
+  background-color: white;
+  background-image: url();
+  width: 100%;
+  margin: 0 auto;
+}
+.museumContainer .museumHero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -735,20 +741,13 @@
   overflow: hidden;
   height: 130vh;
 }
-.museumHero h1 {
+.museumContainer .museumHero h1 {
   text-transform: uppercase;
   text-align: center;
-  color: #CF2E20;
   font-size: 6em;
   color: white;
   margin-top: 5em;
   font-family: 'Oswald Bold';
-}
-.museumContainer {
-  background-color: white;
-  background-image: url();
-  width: 100%;
-  margin: 0 auto;
 }
 .museumContainer .section {
   border-bottom: 1px solid #A7A9AC;
@@ -758,7 +757,7 @@
   text-transform: uppercase;
   font-family: 'Oswald Bold';
   font-size: 5em;
-  color: #101C3C;
+  color: #CF2E20;
   text-align: center;
 }
 .museumContainer .section p {
@@ -777,6 +776,13 @@
   padding-bottom: 100px;
   width: 50%;
   margin-left: 25%;
+}
+.content ul {
+  list-style-type: none;
+}
+.content .item {
+  border: 1px solid #A7A9AC;
+  background-color: #F1F1F1;
 }
 @media screen and (max-width: 800px) {
   .section {
