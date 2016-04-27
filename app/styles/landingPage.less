@@ -5,6 +5,11 @@
     width: 100%;
     height: 800px;
 }
+.mobileBackground{
+    width: 100%;
+    z-index: -10;
+    top:0;
+}
 #sectionLanding{ 
     overflow: hidden; 
     .layer0 {
@@ -36,7 +41,7 @@
             right:0;
             width: 100%;
             max-width: 2560px;
-            height: 650px;
+            min-height: 750px;
             background-size: 100% 100%;
             background-color: black; /* in case the video doesn't fit the whole page*/
             background-position: center center;
@@ -49,28 +54,44 @@
         padding-top: 20px; 
     }
     .landingTextArea{
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(255,255,255,0.05);
         background{
             filter: blur(0.2)
         }
         border-radius: 2%;
-        margin-top: 3%;
+        margin: 5%;
+        padding: 3% 5%;
         text-align: center;
         max-height: 60%;
         margin-bottom: 5%;
+        color: white;
         .landingText{
-            color: @brandFontPrimary;
-            font-size: 2.5em;
+            font-size: 1.5em;
             border-bottom: 1px solid white;
+        }
+        .callToAction{
+            font-size: 1.3em;
+            text-transform: uppercase;
+            color: white;
+            .button {
+                background-color: transparent;
+                border-radius: 5%;
+                text-align: center;
+                border: 2px solid white;
+            }
+            .button:hover {
+                background-color: white;
+                color: @brandPrimary;
+            }
         }
     }
 }
-@sliderBoxHeight: 750px;
+@sliderBoxHeight: 550px;
 
 .slider {
 	/* set initial width */
 	max-width: 2160px;
-	width: 65%;
+	width: 66.6%;
 	text-align: center;
     z-index: 20; 
 	/* hide the content that overflows (to allow second box to show through) */
@@ -106,19 +127,28 @@
 .spaceland {
 	/* skew back by negative of parent’s skew so contents is upright */
 	transform: skewX(10deg);
-	background: url(../images/canaan_martin/LSEIBlueprintScaled.jpg) no-repeat;
+	background: url(../images/main_view/LSEIBluePrintOff.jpg) no-repeat;
 	margin-left: 150px; /* give margin to push content away from left slanted edge */
 	pointer-events: auto;	/* allow pointer events for the box */
     height: 750px;
     max-height: @sliderBoxHeight
 }
+.spaceland:hover{
+    background: url('../images/main_view/LSEIBluePrintOn.jpg') no-repeat;
+}
 
 .lunaland {
-	background:  url(../images/space_elevator/space_elevator-5.jpg) no-repeat;
+	background:  url(../images/main_view/spaceelevatoroff.jpg) no-repeat;
 	position: absolute; 	/* remove from flow so sunset is placed on top */
     background-size: cover;
 	height: @sliderBoxHeight
 }
+.lunaland:hover{
+    background: url('../images/main_view/spaceelevatorhover.jpg') no-repeat;
+    height: @sliderBoxHeight;
+    background-size: cover;
+}
+
 	
 	/* make first box bigger on hover, and smaller when hover second box */
 .slider:hover {
@@ -133,6 +163,7 @@
 
 .lsei {
     text-align: center;
+    margin-top: 90px;
 }
 .lunarElevatorText{
     position: absolute;
