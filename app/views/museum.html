@@ -1,11 +1,21 @@
 <section class="museumContainer">
-    <div class="museumHero">
-        <h1 class="headerStyle">Outcomes</h1>
+    <div class="museumHero headerStyle">
+        <h1>Outcomes</h1>
     </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-3" ng-repeat="image in images">
+            <a href="" class="thumbnail">
+                <img ng-click="open($index)" ng-src="{{image.imgSrc}}">
+            </a>     
+        </div>
+    </div>      
+   
+    
     <div class="section headerStyle">
         <h2>Strategic – 5-7 Years</h2>
         <div class="row content">
-            <div class="item col-md-4 col-sm-12">
+            <div class="item col-xs-6 col-md-3">
                 <ul>
                     <li>Economically Feasible access to the Lunar surface for scientific exploration, commercial development and settlement.</li>
                     <li>Permanent human settlement beyond Low Earth Orbit.</li>
@@ -13,7 +23,7 @@
                         This crewed infrastructure includes communications, fuel depot, robotic support and nodes to connect additional modules for expanded capabilities.</li>
                 </ul>
             </div>
-            <div class="item col-md-4 col-sm-12">
+            <div class="item col-xs-6 col-md-3">
                 <ul>
                     <li>Technical knowledge, legal capacity and regulatory authority to design and construct the LSEI.</li>
                     <li>Full funding to complete LSEI construction.</li>
@@ -21,7 +31,7 @@
                     <li>Complete understanding of international policy, regulatory, legal, environmental and military requirements to construct and launch the LSEI</li>
                 </ul>
             </div>
-            <div class="item col-md-4 col-sm-12">
+            <div class="item col-xs-6 col-md-3">
                 <ul>
                     <li>Funding to complete initial design, feasibility and basic operations</li>
                     <li>LSEI Design Study</li>
