@@ -29,9 +29,11 @@
 }
 .headerStyle h1 {
   text-transform: uppercase;
+  text-align: center;
+  font-size: 6em;
+  color: white;
+  margin-top: 5em;
   font-family: 'Oswald Bold';
-  font-size: 5em;
-  color: #101C3C;
 }
 .headerStyle h2 {
   text-transform: uppercase;
@@ -146,7 +148,6 @@
   text-align: left;
   font: bold 16px 'Roboto Condensed Light';
   padding: 55px 50px;
-  margin-top: 80px;
 }
 #lpnamefooter {
   width: 50% !important;
@@ -890,12 +891,6 @@
   height: 130vh;
 }
 .museumContainer .museumHero h1 {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 6em;
-  color: white;
-  margin-top: 5em;
-  font-family: 'Oswald Bold';
   margin-left: -20px;
 }
 .museumContainer .section {
