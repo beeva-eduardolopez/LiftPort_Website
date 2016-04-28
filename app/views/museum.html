@@ -1,24 +1,73 @@
 <section class="museumContainer">
-    <div class="museumHero">
-        <h1 class="headerStyle">Outcomes</h1>
+    <div class="museumHero headerStyle">
+        <h1>Outcomes</h1>
     </div>
-    <div class="section">
+
+    <div class="row">
+        <div class="col-xs-6 col-md-3" ng-repeat="image in images">
+            <a href="" class="thumbnail">
+                <img ng-click="openModal($index)" ng-src="{{image.imgSrc}}"  data-target="#viewImage" data-toggle="modal">
+            </a>     
+        </div>
+    </div>      
+    
+<!--<div class="modal fade" id="viewImage" tabindex="-1" role="dialog" aria-labelledby="viewImageLabel" ng-repeat="image in images">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+        <div class="modal-body" id="viewImage">
+        <!--<img src="{{image.img1}}">
+        <img src="{{image.img2}}">
+        <img src="{{image.img3}}">
+        <img src="{{image.img4}}">
+        <img src="{{image.img5}}">
+        <img src="{{image.img6}}">
+        <img src="{{image.img7}}">
+        <img src="{{image.img8}}">
+    </div>
+    </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    -->
+    
+    
+    <div class="section headerStyle">
         <h2>Strategic – 5-7 Years</h2>
-        <p>
-            Economically Feasible access to the Lunar surface for scientific exploration, commercial development and settlement.
-            Permanent human settlement beyond Low Earth Orbit.
-            Infrastructure sufficient to support exploration missions to the Asteroid Belt, Mars, and further destinations.  This crewed infrastructure includes communications, fuel depot, robotic support and nodes to connect additional modules for expanded capabilities.
-            Technical knowledge, legal capacity and regulatory authority to design and construct the LSEI.
-            Full funding to complete LSEI construction.
-            Team established to design LSEI hardware
-            Complete understanding of international policy, regulatory, legal, environmental and military requirements to construct and launch the LSEI
-            Funding to complete initial design, feasibility and basic operations
-            LSEI Design Study
-            LSEI Feasibility Study
-            Financing for Year 1, 2, and 3
-            Board of Advisors Conference(s)
-            StringSat Experiment (1 of 3) Built and Launched
-        </p>
+        <div class="row content">
+            <div class="item col-xs-6 col-md-3">
+                <ul>
+                    <li>Economically Feasible access to the Lunar surface for scientific exploration, commercial development and settlement.</li>
+                    <li>Permanent human settlement beyond Low Earth Orbit.</li>
+                    <li>Infrastructure sufficient to support exploration missions to the Asteroid Belt, Mars, and further destinations.  
+                        This crewed infrastructure includes communications, fuel depot, robotic support and nodes to connect additional modules for expanded capabilities.</li>
+                </ul>
+            </div>
+            <div class="item col-xs-6 col-md-3">
+                <ul>
+                    <li>Technical knowledge, legal capacity and regulatory authority to design and construct the LSEI.</li>
+                    <li>Full funding to complete LSEI construction.</li>
+                    <li>Team established to design LSEI hardware</li>
+                    <li>Complete understanding of international policy, regulatory, legal, environmental and military requirements to construct and launch the LSEI</li>
+                </ul>
+            </div>
+            <div class="item col-xs-6 col-md-3">
+                <ul>
+                    <li>Funding to complete initial design, feasibility and basic operations</li>
+                    <li>LSEI Design Study</li>
+                    <li>LSEI Feasibility Study</li>
+                    <li>Financing for Year 1, 2, and 3</li>
+                    <li>Board of Advisors Conference(s)</li>
+                    <li>StringSat Experiment (1 of 3) Built and Launched</li>
+                </ul>
+            </div>
+        </div>
 
     <h2>Intermediate – 3-5 Years</h2>
 

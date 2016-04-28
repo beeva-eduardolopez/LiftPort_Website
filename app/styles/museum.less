@@ -12,45 +12,31 @@
         background-position: center center;
         background-image: url('../images/iss028e020072_lrg.jpg');
         overflow: hidden;
-        // will-change: transform;
-        // -webkit-backface-visibility: hidden;
-        // backface-visibility: hidden;
-        height: 130vh;
-        // // position: fixed;
-        // width: 100%;
-        // -webkit-transform: translateY(20vh);
-        // -ms-transform: translateY(20vh);
-        // transform: translateY(20vh);
-        // -webkit-transition: all 1.4s cubic-bezier(0.22, 0.44, 0, 1);
-        // transition: all 1.4s cubic-bezier(0.22, 0.44, 0, 1);
+        height: 100vh;
   
         h1 {
-            text-transform: uppercase;
-            text-align: center;
-            color: @brandSecondary;
-            font-size: 6em;
-            color: white;
-            margin-top: 5em;
-            font-family: 'Oswald Bold';
-            
+            margin-left: -20px;   
         }   
         
     }
     
+    .exhibit {
+        margin: 1em;
+        
+        #photo-modal .modal-dialog {
+            text-align:center;
+            display:table;
+            padding: 0;
+            margin-top: 30px;
+        }
+    }
+    
     .section {
-        // padding-top: 100px;
-        // height: 400px;
+        padding-top: 50px;
         border-bottom: 1px solid @brandFontSecondary;
         margin: 0 auto;
+        background-color: #f5f5f5;
         
-        h2 {
-            text-transform: uppercase;
-            font-family: 'Oswald Bold';
-            font-size: 5em;
-            color:@brandSecondary;
-            text-align: center;
-        }
-
         p {
             margin-left: 25%;
             width: 50%;
@@ -70,8 +56,29 @@
             width: 50%;
             margin-left: 25%;
         }
+        
     }
 }
+
+.content {
+    margin-left: 15%;
+    
+    
+    .item {
+        border: 1px solid @brandFontSecondary;
+        background-color: white;
+        padding-top: 1em;
+        height: 375px;
+        width: 25%;
+        margin: 1em;
+        
+        ul {
+        list-style-type: none;
+        padding: 9px;
+    }
+    }
+}
+
 
 @media screen and (max-width:800px) {
     .section {
