@@ -2,10 +2,91 @@
     <div class="museumHero headerStyle">
         <h1>Outcomes</h1>
     </div>
+
+    <div class="exhibit">
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="#myModal">
+                    <img src="{{image.img1}}">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
+                <img src="../images/museum/SS_SpaceElevator5.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
+                <img src="../images/museum/SS_SpaceElevator10.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
+                <img src="../images/museum/SS_SpaceElevator6.jpg" alt="...">
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
+                <img src="../images/museum/SS_SpaceElevator12.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
+                <img src="../images/museum/SS_SpaceElevator9.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
+                <img src="../images/museum/SS_SpaceElevator8.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
+                <img src="../images/museum/SS_SpaceElevator7.jpg" alt="...">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="viewUserLabel" ng-repeat="image in images">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img src="{{image.img1}}">
+    </div>
+      <!--<div class="modal-body">
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+            </thead>
+            <tbody>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.address.street}}</td>
+            </tbody>
+        </table>
+      </div>-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
     <div class="section headerStyle">
         <h2>Strategic – 5-7 Years</h2>
         <div class="row content">
-            <div class="item col-md-4 col-sm-12">
+            <div class="item col-xs-6 col-md-3">
                 <ul>
                     <li>Economically Feasible access to the Lunar surface for scientific exploration, commercial development and settlement.</li>
                     <li>Permanent human settlement beyond Low Earth Orbit.</li>
@@ -13,7 +94,7 @@
                         This crewed infrastructure includes communications, fuel depot, robotic support and nodes to connect additional modules for expanded capabilities.</li>
                 </ul>
             </div>
-            <div class="item col-md-4 col-sm-12">
+            <div class="item col-xs-6 col-md-3">
                 <ul>
                     <li>Technical knowledge, legal capacity and regulatory authority to design and construct the LSEI.</li>
                     <li>Full funding to complete LSEI construction.</li>
@@ -21,7 +102,7 @@
                     <li>Complete understanding of international policy, regulatory, legal, environmental and military requirements to construct and launch the LSEI</li>
                 </ul>
             </div>
-            <div class="item col-md-4 col-sm-12">
+            <div class="item col-xs-6 col-md-3">
                 <ul>
                     <li>Funding to complete initial design, feasibility and basic operations</li>
                     <li>LSEI Design Study</li>

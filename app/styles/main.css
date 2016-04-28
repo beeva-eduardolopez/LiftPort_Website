@@ -33,6 +33,7 @@
   font-size: 6em;
   color: white;
   margin-top: 5em;
+  padding-bottom: 5em;
   font-family: 'Oswald Bold';
 }
 .headerStyle h2 {
@@ -896,10 +897,19 @@
   background-position: center center;
   background-image: url('../images/iss028e020072_lrg.jpg');
   overflow: hidden;
-  height: 130vh;
+  height: 100vh;
 }
 .museumContainer .museumHero h1 {
   margin-left: -20px;
+}
+.museumContainer .exhibit {
+  margin: 1em;
+}
+.museumContainer .exhibit #photo-modal .modal-dialog {
+  text-align: center;
+  display: table;
+  padding: 0;
+  margin-top: 30px;
 }
 .museumContainer .section {
   padding-top: 50px;
