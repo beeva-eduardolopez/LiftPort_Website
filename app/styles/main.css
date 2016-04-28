@@ -131,8 +131,6 @@
 #header .navbar-toggle {
   margin-right: 25px;
   margin-top: 15px;
-  background-color: transparent;
-  border: transparent;
 }
 #header .navbar-toggle .icon-bar {
   background-color: #FFF;
