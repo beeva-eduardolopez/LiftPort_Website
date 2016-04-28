@@ -6,37 +6,11 @@
     <div class="row">
         <div class="col-xs-6 col-md-3" ng-repeat="image in images">
             <a href="" class="thumbnail">
-                <img ng-click="openModal($index)" ng-src="{{image.imgSrc}}"  data-target="#viewImage" data-toggle="modal">
+                <img ng-click="open($index)" ng-src="{{image.imgSrc}}">
             </a>     
         </div>
     </div>      
-    
-<!--<div class="modal fade" id="viewImage" tabindex="-1" role="dialog" aria-labelledby="viewImageLabel" ng-repeat="image in images">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-        <div class="modal-body" id="viewImage">
-        <!--<img src="{{image.img1}}">
-        <img src="{{image.img2}}">
-        <img src="{{image.img3}}">
-        <img src="{{image.img4}}">
-        <img src="{{image.img5}}">
-        <img src="{{image.img6}}">
-        <img src="{{image.img7}}">
-        <img src="{{image.img8}}">
-    </div>
-    </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-    -->
-    
+   
     
     <div class="section headerStyle">
         <h2>Strategic – 5-7 Years</h2>
