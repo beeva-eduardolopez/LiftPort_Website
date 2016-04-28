@@ -6,74 +6,66 @@
     <div class="exhibit">
         <div class="row">
             <div class="col-xs-6 col-md-3">
-                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="#myModal">
+                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="myModal">
                     <img src="{{image.img1}}">
                 </a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
-                <img src="../images/museum/SS_SpaceElevator5.jpg" alt="...">
+                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="myModal">                
+                    <img src="{{image.img2}}">
                 </a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
-                <img src="../images/museum/SS_SpaceElevator10.jpg" alt="...">
+                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="myModal">                
+                    <img src="{{image.img3}}">
                 </a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
-                <img src="../images/museum/SS_SpaceElevator6.jpg" alt="...">
+                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="myModal">                
+                    <img src="{{image.img4}}">
                 </a>
             </div>
         </div>
         
         <div class="row">
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
-                <img src="../images/museum/SS_SpaceElevator12.jpg" alt="...">
+                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="myModal">                
+                    <img src="{{image.img5}}">
                 </a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
-                <img src="../images/museum/SS_SpaceElevator9.jpg" alt="...">
+                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="myModal">                
+                    <img src="{{image.img6}}">
                 </a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
-                <img src="../images/museum/SS_SpaceElevator8.jpg" alt="...">
+                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="myModal">                
+                    <img src="{{image.img7}}">
                 </a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail" data-imgpath="pathToImage"" data-toggle="modal" data-target="#myModal" pop">
-                <img src="../images/museum/SS_SpaceElevator7.jpg" alt="...">
+                <a href="" class="thumbnail" ng-repeat="image in images" data-toggle="modal" data-target="myModal">                
+                    <img src="{{image.img8}}">
                 </a>
             </div>
         </div>
     </div>
     
     
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="viewUserLabel" ng-repeat="image in images">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="myModal" ng-repeat="image in images">
+  <div class="modal-dialog">
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <img src="{{image.img1}}">
+        <img src="{{image.img2}}">
+        <img src="{{image.img3}}">
+        <img src="{{image.img4}}">
+        <img src="{{image.img5}}">
+        <img src="{{image.img6}}">
+        <img src="{{image.img7}}">
+        <img src="{{image.img8}}">
     </div>
-      <!--<div class="modal-body">
-        <table class="table">
-            <thead>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Address</th>
-            </thead>
-            <tbody>
-                <td>{{user.name}}</td>
-                <td>{{user.email}}</td>
-                <td>{{user.phone}}</td>
-                <td>{{user.address.street}}</td>
-            </tbody>
-        </table>
-      </div>-->
+
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
