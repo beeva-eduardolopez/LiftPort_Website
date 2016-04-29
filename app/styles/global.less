@@ -35,7 +35,7 @@
 @brandFontTertiary: #1D1D1D;
 @navbarheight: 73px;
 @containerpad:7%;
-@borderradius:5px;
+@borderradius:10px;
 
 .paragraphStyle {
     p {
@@ -96,7 +96,7 @@
     right: 0;
     top: 0;
     background-color: rgba(255,255,255,0.3); 
-    @media (max-width: 900px){
+    @media (max-width: 768px){
         height: 0px;
         width: 0px;
     } 
@@ -178,7 +178,8 @@ width: 100%;
 //FOOTER
 .footer{
     border-top: 4px solid @brandSecondary;
-	background-color: @brandPrimary;
+    background-image: url('../images/main_view/liftPorthoneycomb.png');
+	// background-color: @brandPrimary;
 	box-shadow: 0 1px 1px 0 @brandFontTertiary;
 	box-sizing: border-box;
 	width: 100%;
@@ -345,7 +346,8 @@ width: 100%;
 @media (max-width: 880px) {
 
 	.footer{
-		font: bold 14px 'Roboto Condensed Light';
+		font: bold 14px 'Roboto Condensed Light';   
+        clear: both;  
 	}
 
 	.footer .footer-left,

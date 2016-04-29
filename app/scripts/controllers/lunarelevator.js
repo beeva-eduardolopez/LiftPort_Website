@@ -3,6 +3,7 @@
 angular.module('liftPortWebsiteApp')
     .controller('LunarElevatorCtrl', function ($scope) {
         $(document).ready(function () {
+            // $scope.stylePDF = "embed-link";
             // if (typeof $.fn.fullpage.destroy == 'function') {
             //     $.fn.fullpage.destroy('all');
             // }
@@ -58,7 +59,7 @@ angular.module('liftPortWebsiteApp')
                     $Align: 360
                 }
             };
-            
+
             var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
 
             //responsive code begin
@@ -99,12 +100,19 @@ angular.module('liftPortWebsiteApp')
             var myPDF = PDFObject.embed("../pdfs/ladder.pdf", "#pdf", options);
 
             var el = document.querySelector("#results");
-            $scope.stylePDF="success";
-            el.setAttribute("class", (myPDF) ? '{{stylePDF}}' : "fail");
+            el.setAttribute("class", (myPDF) ? "success" : "fail");
         });
 
+
         $scope.closePDF = function (value) {
-            $scope.stylePDF=  "embed-link";
+            $scope.stylePDF = "embed-link";
+            var myEl = angular.element(document.querySelector('#pdf'));
+            myEl.removeClass("pdfobject-container");
+            myEl.empty();
+            var el = document.querySelector("#test");
+            el.classList.remove("hidden");
+            el.classList.add("embed-link");
+
         };
 
     });
