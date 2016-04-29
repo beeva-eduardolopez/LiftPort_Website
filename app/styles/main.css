@@ -68,16 +68,16 @@
 .onHidden {
   z-index: 110;
   position: fixed;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   right: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.3);
 }
 @media (max-width: 768px) {
   .onHidden {
-    height: 0px;
-    width: 0px;
+    height: 45px;
+    width: 45px;
   }
 }
 #header {
@@ -317,14 +317,15 @@
   margin: 0 auto;
   width: 100%;
 }
-.landingPage {
-  max-height: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
 @media (min-width: 992px) {
   #sectionLanding {
     overflow: hidden;
+    max-height: 900px;
+  }
+  #sectionLanding .landingPage {
+    max-height: 900px;
+    width: 100%;
+    margin: 0 auto;
   }
   #sectionLanding .layer0 {
     width: auto;
@@ -353,7 +354,7 @@
     right: 0;
     width: 100%;
     max-width: 2560px;
-    min-height: 750px;
+    height: 100%;
     background-size: 100% 100%;
     background-color: black;
     /* in case the video doesn't fit the whole page*/
