@@ -619,13 +619,18 @@
 .lunar-container {
   margin: 7%;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .lunar-txt {
   margin: 1em;
 }
 .lunar-img {
-  background-image: url('../images/lunar_elevator/lunarHero.jpg');
+  background-image: url(../images/lunar_elevator/lunar_text.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 34em;
+  margin-top: 2em;
 }
 .videos {
   text-align: center;
@@ -804,10 +809,18 @@
 .space-container {
   margin: 7%;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .space-txt {
   margin: 1em;
+}
+.space-img {
+  background-image: url(../images/space_elevator/space_text.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 56em;
+  margin-top: 2em;
 }
 .videoWrapper {
   position: relative;
