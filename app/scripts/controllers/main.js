@@ -45,11 +45,11 @@ angular.module('liftPortWebsiteApp')
         $(window).scroll( function() {
             var value = $(window).scrollTop();
                 if (value === 0){
-                    if (window.innerWidth > 900) {
-                        if (location.href.split('#').pop() === '/') {
+                    // if (window.innerWidth > 900) {
+                        // if (location.href.split('#').pop() === '/') {
                             $('.navbar-fixed-top').autoHidingNavbar('hide', true);
-                        }
-                    }
+                        // }
+                    // }
                 } else {
                     $('.navbar-fixed-top').autoHidingNavbar();
                 }

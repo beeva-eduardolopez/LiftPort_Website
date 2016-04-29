@@ -2,11 +2,14 @@
 <div id="fullpage">
     <div class="section" id="sectionLanding">
         <div class="landingPage">
-            <div class="visible-lg visible-md visible-sm">
+            <div class="visible-lg visible-md">
                 <video autoplay loop muted id="bgvid">
                     <source src="images/main_view/STAR_SKY_HD_background_loop.webm" type="video/webm">
                     <source src="images/main_view/STAR SKY HD background loop.mp4" type="video/mp4">
                 </video>
+            </div>
+            <div class="tabletBackground visible-sm">
+                <img src="images/main_view/nasa1.jpg">
             </div>
             <div class="mobileBackground col-xs-12 hidden-sm hidden-md hidden-lg">
                 <img src="images/main_view/mobilebg.jpg">
@@ -20,21 +23,24 @@
                     <img src="images/4_LiftPort_Logo_(website).png" alt="LiftPort" class="landingTitle ">
                 </div>
               
-                <div class="col-md-5 col-md-offset-2 col-xs-12" id="landingTextArea">
+                <div class="col-md-6 col-md-offset-3 col-xs-12" id="landingTextArea">
                     <div id="landingText">
                         <p>LiftPort is pushing the limits of engineering to propel humanity towards the stars. With a Lunar Space Elevator Infrastructure, we hope to give humanity quick access to long-term lunar exploration, and the resources it can provide.</p> 
                     </div>
                     <div class="callToAction paragraphStyle">
-                        <p >If you'd like to receive updates on our mission direct to your inbox, sign up below!</p>
-                        <button type="button" class="btn btn-landing" href="#techdocs">SIGN UP</button>
+                        <p >If you'd like to receive email updates on our mission, sign up below!</p>
+                        <a href="#techdocs">
+                            <button type="button" class="btn" id='btn-landing'>
+                                SIGN UP
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
             
         </div>
     </div>
-    <div class="lEsE">
-            
+    <div class="lEsE">   
             <div class="spacerbox headerStyle">
                 <h2 class="lsei">KEY PROJECTS</h2>
             </div>
@@ -53,13 +59,21 @@
                     <img src="images/main_view/LSEIBlueprintScaled.jpg" alt="">
                     <h3>LUNAR ELEVATOR</h3>
                     <p>This paragraph is designed to explore the mission, design,and funtamental points that go into making the Lunar Elevator. </p>  
-                    <button class="btn btn-projects" href="#lunarelevator">LEARN MORE</button>   
+                    <a href="#lunarelevator">
+                         <button class="btn btn-projects" href="#lunarelevator">
+                             MORE INFO
+                        </button>   
+                    </a>
                 </div>
                 <div class="lunarmobile">     
                     <img src="images/main_view/stationblank.jpg" alt="">     
                     <h3>SPACE ELEVATOR</h3>
                     <p>This paragraph is designed to explore the mission, design,and funtamental points that go into making the Space Elevator.</p>
-                    <button class="btn btn-projects" href="#spaceelevator">LEARN MORE</button>
+                    <a href="#spaceelevator">
+                        <button class="btn btn-projects">
+                            MORE INFO
+                        </button>
+                    </a>
                 </div> 
             </div>
     </div>
