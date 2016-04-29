@@ -98,9 +98,13 @@ angular.module('liftPortWebsiteApp')
             };
 
             var myPDF = PDFObject.embed("../pdfs/ladder.pdf", "#pdf", options);
-
+            
             var el = document.querySelector("#results");
             el.setAttribute("class", (myPDF) ? "success" : "fail");
+            
+            var close = document.querySelector("#close");
+            close.classList.remove("hidden");
+            
         });
 
 
@@ -112,6 +116,8 @@ angular.module('liftPortWebsiteApp')
             var el = document.querySelector("#test");
             el.classList.remove("hidden");
             el.classList.add("embed-link");
+            var close = document.querySelector("#close");
+            close.classList.add("hidden");
 
         };
 
