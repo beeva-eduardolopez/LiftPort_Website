@@ -661,6 +661,9 @@
   background-image: url('../images/lunar_elevator/lunarHero.jpg');
   overflow: hidden;
   height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .lunarHero h1 {
   text-transform: uppercase;
@@ -905,6 +908,9 @@
   background-image: url('../images/space_elevator/spaceHero.jpg');
   overflow: hidden;
   height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .spaceHero h1 {
   text-transform: uppercase;
@@ -1085,6 +1091,9 @@
   background-image: url('../images/museum/moon-fusion.jpg');
   overflow: hidden;
   height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .volunteer {
   background-color: #101C3C;
@@ -1173,6 +1182,9 @@
   background-image: url('../images/museum/lunar_elevator_ascending_1280.jpg');
   overflow: hidden;
   height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .museumContainer .museumSection {
   padding-top: 50px;
