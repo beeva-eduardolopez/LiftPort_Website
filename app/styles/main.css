@@ -644,7 +644,7 @@
   color: #CF2E20;
   font-size: 6em;
   color: white;
-  margin-top: 5em;
+  margin-top: 10%;
   font-family: 'Oswald Bold';
 }
 .section_0 {
@@ -797,6 +797,8 @@
 }
 .ele {
   padding: 0em !important;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
 }
 .video-container {
   position: relative;
@@ -886,7 +888,7 @@
   color: #CF2E20;
   font-size: 6em;
   color: white;
-  margin-top: 5em;
+  margin-top: 10%;
   font-family: 'Oswald Bold';
 }
 .jssora05l,
@@ -1008,6 +1010,8 @@
 }
 .ele {
   padding: 0em !important;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
 }
 .video-container {
   position: relative;
