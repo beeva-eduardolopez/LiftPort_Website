@@ -828,6 +828,7 @@
   border-bottom: 4px solid;
 }
 .video-container {
+  margin-top: 3em;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -1049,6 +1050,7 @@
   padding-top: 30px;
   height: 0;
   overflow: hidden;
+  margin-top: 3em;
 }
 .video-container iframe,
 .video-container object,
