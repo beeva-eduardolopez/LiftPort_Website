@@ -1,9 +1,25 @@
 @import "global.less";
 
 .museumContainer {
+    overflow: hidden;
     // padding-top: 1em;
     background-color: white;
     margin: 0 auto;
+    
+    .strategy {
+        p {
+            padding: 0;
+            margin: 0 auto;
+        }
+    }
+    h2{
+        border-top: 4px solid;
+        border-bottom: 4px solid;
+        padding: 10px;
+    }
+    p {
+        padding-top: 3em;
+    }
     .museumHero {
         background-size: cover;
         background-repeat: no-repeat;
@@ -42,9 +58,9 @@
     }
 }
 
-.content {
-    margin-left: 25%;
-}
+// .content {
+//     margin-left: 25%;
+// }
 
 
 @media screen and (max-width:800px) {
