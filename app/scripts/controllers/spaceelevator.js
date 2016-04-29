@@ -101,5 +101,16 @@ angular.module('liftPortWebsiteApp')
             var el = document.querySelector("#results");
             el.setAttribute("class", (myPDF) ? "success" : "fail");
         });
+        
+         $scope.closePDF = function (value) {
+            $scope.stylePDF = "embed-link";
+            var myEl = angular.element(document.querySelector('#pdf'));
+            myEl.removeClass("pdfobject-container");
+            myEl.empty();
+            var el = document.querySelector("#test");
+            el.classList.remove("hidden");
+            el.classList.add("embed-link");
+
+        };
 
     });
