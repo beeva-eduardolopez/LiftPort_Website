@@ -14,5 +14,4 @@ angular.module('liftPortWebsiteApp')
             {"imgSrc": "../images/museum/SS_SpaceElevator10.jpg"},
             {"imgSrc": "../images/museum/SS_SpaceElevator12.jpg"}
         ];
-        
 });
