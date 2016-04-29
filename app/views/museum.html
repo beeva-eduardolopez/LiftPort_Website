@@ -80,8 +80,10 @@
         </p>
 </section>
 <br>
-<div class="row">
-    <div class="col-xs-6 col-md-3" ng-repeat="image in images">
-        <a href="" class="thumbnail">
-        <img ng-src="{{image.imgSrc}}">
+    <div class="row">
+        <div class="col-xs-6 col-md-3" ng-repeat="image in images">
+            <a href="" class="thumbnail">
+                <img ng-click="open($index)" ng-src="{{image.imgSrc}}">
+            </a>     
+        </div>
     </div> 
