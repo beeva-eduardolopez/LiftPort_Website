@@ -33,6 +33,7 @@
   font-size: 6em;
   color: white;
   margin-top: 5em;
+  padding-bottom: 5em;
   font-family: 'Oswald Bold';
 }
 .headerStyle h2 {
@@ -47,21 +48,34 @@
   width: 100%;
   max-height: 80px;
 }
+@media (min-width: 768px) {
+  .navbar-header {
+    height: 0px;
+    width: 0px;
+  }
+}
 .navbar-fixed-top {
   height: 110px;
 }
 .colorNav {
   background-image: url('../images/main_view/liftPorthoneycomb.png');
   border-bottom: 4px solid #CF2E20;
+  height: 84px;
 }
 .onHidden {
   z-index: 110;
   position: fixed;
-  height: 80px;
-  width: auto;
+  height: 70px;
+  width: 90px;
   right: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 900px) {
+  .onHidden {
+    height: 0px;
+    width: 0px;
+  }
 }
 #header {
   background-color: transparent;
@@ -70,7 +84,6 @@
   width: 100%;
 }
 #header li {
-  line-height: 73px;
   padding-right: 20px;
   position: bottom;
   margin-top: 30px;
@@ -89,20 +102,19 @@
   color: #CF2E20;
   background-color: transparent;
 }
-#header li .dropdown-menu {
+#header li #specialList {
   z-index: 25;
-  margin-top: -9px;
   border: none;
   box-shadow: none;
   height: auto;
   background-color: #CF2E20;
   color: #F1F1F1;
 }
-#header li .dropdown-menu li {
+#header li #specialList li {
   display: inline;
   text-align: center;
 }
-#header li .dropdown-menu li a:hover {
+#header li #specialList li a:hover {
   color: #101C3C;
 }
 #header #lplogo {
@@ -117,10 +129,11 @@
     height: 35px;
     width: auto;
     padding-left: 80px;
-    margin-top: 4%;
+    margin-top: -20px;
+    margin-left: 20px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 899px) {
   #header #lpname {
     height: 0px;
     width: 0px;
@@ -831,35 +844,35 @@
   background-color: #101C3C;
   color: white;
 }
-.aboutContainer .section {
+.aboutContainer .aboutSection {
   border-bottom: 1px solid #A7A9AC;
   margin: 0 auto;
 }
-.aboutContainer .section h1 {
+.aboutContainer .aboutSection h1 {
   text-transform: uppercase;
   text-align: center;
   color: #CF2E20;
   font-size: 2em;
   padding-bottom: 1em;
 }
-.aboutContainer .section p {
+.aboutContainer .aboutSection p {
   margin-left: 25%;
   width: 50%;
   text-align: center;
   padding-bottom: 100px;
   font-size: 1em;
 }
-.aboutContainer .section .btn {
+.aboutContainer .aboutSection .btn {
   background-color: #CF2E20;
   color: white;
 }
-.aboutContainer .section .signUp {
+.aboutContainer .aboutSection .signUp {
   padding-bottom: 100px;
   width: 50%;
   margin-left: 25%;
 }
 @media screen and (max-width: 800px) {
-  .section {
+  .aboutSection {
     margin: 0 auto;
     padding: 0;
   }
@@ -869,7 +882,7 @@
   }
 }
 @media screen and (max-width: 400px) {
-  .section {
+  .aboutSection {
     margin: 0 auto;
     width: 100%;
   }
@@ -907,13 +920,13 @@
   padding: 0;
   margin-top: 30px;
 }
-.museumContainer .section {
+.museumContainer .museumSection {
   padding-top: 50px;
   border-bottom: 1px solid #A7A9AC;
   margin: 0 auto;
   background-color: #f5f5f5;
 }
-.museumContainer .section p {
+.museumContainer .museumSection p {
   margin-left: 25%;
   width: 50%;
   text-align: center;
@@ -921,11 +934,11 @@
   font-size: 1em;
   font-family: Roboto Condensed;
 }
-.museumContainer .section .btn {
+.museumContainer .museumSection .btn {
   background-color: #CF2E20;
   color: white;
 }
-.museumContainer .section .signUp {
+.museumContainer .museumSection .signUp {
   padding-bottom: 100px;
   width: 50%;
   margin-left: 25%;
@@ -946,7 +959,7 @@
   padding: 9px;
 }
 @media screen and (max-width: 800px) {
-  .section {
+  .museumSection {
     margin: 0 auto;
     padding: 0;
   }
@@ -956,7 +969,7 @@
   }
 }
 @media screen and (max-width: 400px) {
-  .section {
+  .museumSection {
     margin: 0 auto;
     width: 100%;
   }
