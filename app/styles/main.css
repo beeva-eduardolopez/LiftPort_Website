@@ -1079,8 +1079,19 @@
     padding: 0;
   }
   p {
-    text-align: left;
     width: 100%;
+  }
+  .volunteer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .volunteer .signUp {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  .volunteer p {
+    text-align: center;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1090,6 +1101,18 @@
   }
   h1 {
     font-size: 2em;
+  }
+  .volunteer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .volunteer h2 {
+    font-size: 2em;
+  }
+  .volunteer .signUp {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
   p {
     margin: 0 auto;
