@@ -156,7 +156,7 @@
 }
 .footer {
   border-top: 4px solid #CF2E20;
-  background-color: #101C3C;
+  background-image: url('../images/main_view/liftPorthoneycomb.png');
   box-shadow: 0 1px 1px 0 #1D1D1D;
   box-sizing: border-box;
   width: 100%;
@@ -621,7 +621,7 @@
   background-position: center center;
   background-image: url('../images/lunar_elevator/lunarHero.jpg');
   overflow: hidden;
-  height: 130vh;
+  height: 75vh;
 }
 .lunarHero h1 {
   text-transform: uppercase;
@@ -633,7 +633,7 @@
   font-family: 'Oswald Bold';
 }
 .section_0 {
-  background-color: #A7A9AC;
+  background-color: #F5F5F5;
   overflow: hidden;
   padding-bottom: 4em;
 }
@@ -658,7 +658,7 @@
   padding: 2em;
 }
 .section_2 {
-  background-color: #A7A9AC;
+  background-color: #F5F5F5;
   overflow: hidden;
   padding-bottom: 4em;
 }
@@ -767,10 +767,39 @@
 .lunar-container {
   margin: 7%;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .lunar-txt {
   margin: 1em;
+}
+.lunar-img {
+  background-image: url(../images/lunar_elevator/lunar_text.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 34em;
+  margin-top: 2em;
+}
+.ele {
+  padding: 0em !important;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .videos {
   text-align: center;
@@ -791,7 +820,7 @@
   border: 1px solid #666;
 }
 .section_0 {
-  background-color: #A7A9AC;
+  background-color: #F5F5F5;
   overflow: hidden;
   padding-bottom: 4em;
 }
@@ -816,7 +845,7 @@
   padding: 2em;
 }
 .section_2 {
-  background-color: #A7A9AC;
+  background-color: #F5F5F5;
   overflow: hidden;
   padding-bottom: 4em;
 }
@@ -834,7 +863,7 @@
   background-position: center center;
   background-image: url('../images/space_elevator/spaceHero.jpg');
   overflow: hidden;
-  height: 130vh;
+  height: 75vh;
 }
 .spaceHero h1 {
   text-transform: uppercase;
@@ -949,17 +978,43 @@
 .space-container {
   margin: 7%;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .space-txt {
   margin: 1em;
 }
+.space-img {
+  background-image: url(../images/space_elevator/space_text.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 56em;
+  margin-top: 2em;
+}
+.ele {
+  padding: 0em !important;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .videos {
   text-align: center;
   margin: 2em;
-}
-.video {
-  padding: 2em;
 }
 .documents {
   text-align: center;
@@ -984,37 +1039,36 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('/images/Space_elevator_sk_3.jpg');
+  background-image: url('../images/museum/moon-fusion.jpg');
   overflow: hidden;
-  height: 130vh;
+  height: 75vh;
 }
-.aboutContainer .volunteer {
+.volunteer {
   background-color: #101C3C;
   color: white;
+  width: 50%;
 }
-.aboutContainer .aboutSection {
+.aboutSection {
   border-bottom: 1px solid #A7A9AC;
-  margin: 0 auto;
+  margin: 100px auto;
 }
-.aboutContainer .aboutSection h1 {
+.aboutSection h1 {
   text-transform: uppercase;
   text-align: center;
   color: #CF2E20;
   font-size: 2em;
-  padding-bottom: 1em;
 }
-.aboutContainer .aboutSection p {
+.aboutSection p {
   margin-left: 25%;
   width: 50%;
   text-align: center;
-  padding-bottom: 100px;
   font-size: 1em;
 }
-.aboutContainer .aboutSection .btn {
+.aboutSection .btn {
   background-color: #CF2E20;
   color: white;
 }
-.aboutContainer .aboutSection .signUp {
+.aboutSection .signUp {
   padding-bottom: 100px;
   width: 50%;
   margin-left: 25%;
@@ -1044,29 +1098,15 @@
 }
 .museumContainer {
   background-color: white;
-  background-image: url();
-  width: 100%;
   margin: 0 auto;
 }
 .museumContainer .museumHero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('../images/iss028e020072_lrg.jpg');
+  background-image: url('../images/museum/lunar_elevator_ascending_1280.jpg');
   overflow: hidden;
-  height: 100vh;
-}
-.museumContainer .museumHero h1 {
-  margin-left: -20px;
-}
-.museumContainer .exhibit {
-  margin: 1em;
-}
-.museumContainer .exhibit #photo-modal .modal-dialog {
-  text-align: center;
-  display: table;
-  padding: 0;
-  margin-top: 30px;
+  height: 75vh;
 }
 .museumContainer .museumSection {
   padding-top: 50px;
@@ -1079,7 +1119,7 @@
   width: 50%;
   text-align: center;
   padding-bottom: 100px;
-  font-size: 1em;
+  font-size: 1.25em;
   font-family: Roboto Condensed;
 }
 .museumContainer .museumSection .btn {
@@ -1092,19 +1132,7 @@
   margin-left: 25%;
 }
 .content {
-  margin-left: 15%;
-}
-.content .item {
-  border: 1px solid #A7A9AC;
-  background-color: white;
-  padding-top: 1em;
-  height: 375px;
-  width: 25%;
-  margin: 1em;
-}
-.content .item ul {
-  list-style-type: none;
-  padding: 9px;
+  margin-left: 25%;
 }
 @media screen and (max-width: 800px) {
   .museumSection {
