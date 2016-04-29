@@ -6,22 +6,23 @@
 .landingPage {
     max-height: 800px;
     width: 100%;
-    height: 800px;
     margin: 0 auto;
 }
 .mobileBackground{
     position: absolute;
     width: 110%;
-    margin-left: -3%;
+    margin-left: -5%;
     z-index: -10;
     top:0;
     img{
-      width: 100%;  
+      width: 100%; 
+      min-height: 435px;
     }
 }
 @media (min-width: 900px) {
 #sectionLanding{ 
     overflow: hidden; 
+    
     .layer0 {
         width: auto;
         height:900px;
@@ -61,9 +62,9 @@
             overflow: hidden;        
     }
     .title {
-        padding-top: 20px; 
+        padding-top: 20px;    
     }
-    .landingTextArea{
+    #landingTextArea{
         background-color: rgba(255,255,255,0.05);
         background{
             filter: blur(0.2)
@@ -109,7 +110,8 @@
 
 @media (max-width: 899px){
     #sectionLanding{
-        overflow: hidden;
+        overflow: none;
+        min-height: 500px;
         .layer1{
             margin-top: 15%;
             position: absolute;
@@ -118,18 +120,30 @@
             width: 100%;
             text-align: center;
             background: transparent;
+            padding-bottom: 15px;
+            .title {
+                margin-top: 13%; 
+                .landingLogo{
+                    height: 0px;
+                    width: 0px;
+                    opacity: 0;
+                }
+                .landingTitle{
+                    text-align:center;
+                    padding: 10px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
-        .title {
-            padding-top: 20px; 
-        }
-        .landingTextArea{
-            background-color: rgba(0,0,0,0.3);
+        #landingTextArea{
+            background-color: rgba(0,0,0,0.5);
             background{
                 filter: blur(0.2)
             }
             border-radius: 2%;
-            line-height: 1.5em;
-            padding: 10% 15%;
+            line-height: 1.3em;
+            padding: 2% 2%;
             text-align: center;
             max-height: 60%;
             margin-bottom: 5%;
@@ -165,7 +179,9 @@
         
     }
 }
+
 .lEsE{
+    margin-top: -4%;
     min-height: 800px;
     overflow: hidden;
     h2{
@@ -261,7 +277,7 @@
 }
 
 .mobileProjects{
-    
+    margin-top: -3%;
     .lunarmobile{
         margin-bottom: 15px;
         margin-top: 15px;
