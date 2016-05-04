@@ -14,6 +14,7 @@ angular.module('liftPortWebsiteApp')
       'AngularJS',
       'Karma'
     ];
+    
     $(document).ready(function () {
         if (typeof $.fn.fullpage.destroy == 'function') {
         $.fn.fullpage.destroy('all');
