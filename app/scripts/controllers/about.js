@@ -8,7 +8,7 @@
  * Controller of the liftPortWebsiteApp
  */
 angular.module('liftPortWebsiteApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('AboutCtrl', function () {
     // var $grid = $('.grid').packery({
     //   itemSelector: '.grid-item',
     //   columnWidth: '.grid-sizer',

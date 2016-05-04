@@ -199,6 +199,17 @@ module.exports = function (grunt) {
       }
     },
 
+    // Renames files for browser caching purposes
+    filerev: {
+      dist: {
+        src: [
+          '<%= yeoman.dist %>/scripts/**/*.js',
+          '<%= yeoman.dist %>/styles/{,*/}*.css',
+          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg,webm,mp4}',
+          '<%= yeoman.dist %>/styles/fonts/*'
+        ]
+      }
+    },
 
     // Reads HTML for usemin blocks to enable smart builds that automatically
     // concat, minify and revision files. Creates configurations in memory so
@@ -332,8 +343,7 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'images/**/*.{webp}',
-            'styles/fonts/**/*',
-            '**'
+            'styles/fonts/*'
           ]
         }, {
           expand: true,
@@ -345,6 +355,12 @@ module.exports = function (grunt) {
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= yeoman.dist %>'
+        },{
+          expand: true,
+          cwd: '<%= yeoman.app %>',
+          src: ['**'],
+          dest: '<%= yeoman.dist %>'
+          
         }]
       },
       styles: {
