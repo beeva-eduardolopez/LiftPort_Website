@@ -39,7 +39,6 @@
     "commit": "777389eab848132f88be2071cac780284d3ffd43"
   },
   "_source": "https://github.com/alvarotrigo/fullPage.js.git",
-  "_target": "^2.7.9",
-  "_originalSource": "fullpage.js",
-  "_direct": true
+  "_target": "~2.7.7",
+  "_originalSource": "fullpage.js"
 }

@@ -15,7 +15,8 @@
         showOnUpscroll: true,
         showOnBottom: true,
         hideOffset: 'auto', // "auto" means the navbar height
-        animationDuration: 200
+        animationDuration: 200,
+        navbarOffset: 0
       };
 
   function AutoHidingNavbar(element, options) {
@@ -32,7 +33,7 @@
     }
 
     autoHidingNavbar.element.addClass('navbar-hidden').animate({
-      top: -1 * parseInt(autoHidingNavbar.element.css('height'), 10)
+      top: -1 * parseInt(autoHidingNavbar.element.css('height'), 10) + autoHidingNavbar.settings.navbarOffset
     }, {
       queue: false,
       duration: autoHidingNavbar.settings.animationDuration
@@ -41,6 +42,8 @@
     $('.dropdown.open .dropdown-toggle', autoHidingNavbar.element).dropdown('toggle');
 
     _visible = false;
+
+    autoHidingNavbar.element.trigger('hide.autoHidingNavbar');
   }
 
   function show(autoHidingNavbar) {
@@ -55,6 +58,8 @@
       duration: autoHidingNavbar.settings.animationDuration
     });
     _visible = true;
+
+    autoHidingNavbar.element.trigger('show.autoHidingNavbar');
   }
 
   function detectState(autoHidingNavbar) {

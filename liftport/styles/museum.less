@@ -1,0 +1,101 @@
+@import "global.less";
+
+.museumContainer {
+    overflow: hidden;
+    // padding-top: 1em;
+    background-color: white;
+    margin: 0 auto;
+    
+    .strategy {
+        p {
+            padding: 0;
+            margin: 0 auto;
+        }
+    }
+    h2{
+        border-top: 4px solid;
+        border-bottom: 4px solid;
+        padding: 10px;
+    }
+    p {
+        padding-top: 3em;
+    }
+    .museumHero {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../images/museum/lunar_elevator_ascending_1280.jpg');
+        overflow: hidden;
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .museumSection {
+        padding-top: 50px;
+        border-bottom: 1px solid @brandFontSecondary;
+        margin: 0 auto;
+        background-color: #f5f5f5;
+    
+        p {
+            margin-left: 25%;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 100px;
+            font-size: 1.25em;
+            font-family: Roboto Condensed;
+        }
+        .btn {
+            background-color: @brandSecondary;
+            color: white;
+        } 
+        .signUp {
+            padding-bottom: 100px;
+            width: 50%;
+            margin-left: 25%;
+        }
+        
+    }
+}
+
+// .content {
+//     margin-left: 25%;
+// }
+
+
+@media screen and (max-width:800px) {
+    .museumSection {
+        margin: 0 auto;
+        padding: 0;
+        h2 {
+            font-size: 2em;
+        }
+        p {
+            text-align: left;
+            width: 100%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:400px) {
+    .content {
+        margin: 0 auto;
+        h2 {
+                font-size: 2em;
+            }
+        
+        p {
+            text-align: left;
+            margin: 0 auto;
+            width: 100%;
+            padding-right: 2em;
+       }
+    }
+    
+}
+
+
+
